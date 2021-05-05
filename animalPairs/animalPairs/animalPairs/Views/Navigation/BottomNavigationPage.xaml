@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:animalPairs.Views.Navigation"
+             x:Class="animalPairs.Views.Navigation.BottomNavigationPage"
+             xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core" 
+            xmlns:Catalog="clr-namespace:animalPairs.Views.Catalog" 
+            xmlns:Chat="clr-namespace:animalPairs.Views.Chat" 
+            xmlns:Settings="clr-namespace:animalPairs.Views.Settings" 
+            xmlns:Profile="clr-namespace:animalPairs.Views.Profile"
+             android:TabbedPage.ToolbarPlacement="Bottom"
+             android:TabbedPage.BarSelectedItemColor="{DynamicResource PrimaryColor}"
+             android:TabbedPage.BarItemColor="{DynamicResource Gray-600}"
+             BarBackgroundColor="White"
+             NavigationPage.HasNavigationBar="False">
+    <TabbedPage.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Styles.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </TabbedPage.Resources>
+    
+    <Catalog:ArticleCardPage Title="Photos">
+        <Catalog:ArticleCardPage.IconImageSource>
+            <FontImageSource FontFamily="{StaticResource FontIcons}"
+                                 Glyph="{StaticResource PhotosIcon}"
+                                 Size="32"/>
+        </Catalog:ArticleCardPage.IconImageSource>
+    </Catalog:ArticleCardPage>
+    
+    <Chat:ChatMessagePage Title="Chats">
+        <Chat:ChatMessagePage.IconImageSource>
+            <FontImageSource FontFamily="{StaticResource FontIcons}"
+                                 Glyph="{StaticResource Messages}"
+                                 Size="16"/>
+        </Chat:ChatMessagePage.IconImageSource>
+    </Chat:ChatMessagePage>
+
+    <Settings:SettingPage Title="Ajustes">
+        <Settings:SettingPage.IconImageSource>
+            <FontImageSource FontFamily="{StaticResource FontIcons}"
+                                 Glyph="{StaticResource SettingsIcon}"
+                                 Size="16"/>
+        </Settings:SettingPage.IconImageSource>
+    </Settings:SettingPage>
+    
+    <Profile:ContactProfilePage Title="Mi perfil">
+        <Profile:ContactProfilePage.IconImageSource>
+            <FontImageSource FontFamily="{StaticResource FontIcons}"
+                                 Glyph="{StaticResource Account}"
+                                 Size="16"/>
+        </Profile:ContactProfilePage.IconImageSource>
+    </Profile:ContactProfilePage>
+    
+</TabbedPage>

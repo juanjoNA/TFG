@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "194256489217",
+    "project_id": "animalpairs-tfg2021",
+    "storage_bucket": "animalpairs-tfg2021.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:194256489217:android:b6a1f0dc26eb5289d46900",
+        "android_client_info": {
+          "package_name": "com.jjnavarro.animalpairs"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "194256489217-2j42g4oogc0gn7stitta3gvtctsm0spe.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCe1FTe0vmQPTdIpkSVIM4cSR38AulqmcA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "194256489217-2j42g4oogc0gn7stitta3gvtctsm0spe.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "194256489217-sgkiq9eov9anhp19rs7rjbu8rrraj95u.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.jjnavarro.animalPairs"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

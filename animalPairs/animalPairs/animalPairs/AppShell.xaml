@@ -1,0 +1,26 @@
+﻿<Shell xmlns="http://xamarin.com/schemas/2014/forms"
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       xmlns:Catalog="clr-namespace:animalPairs.Views.Catalog" 
+       xmlns:Chat="clr-namespace:animalPairs.Views.Chat" 
+       xmlns:Settings="clr-namespace:animalPairs.Views.Settings" 
+       xmlns:Profile="clr-namespace:animalPairs.Views.Profile"
+       xmlns:Forms="clr-namespace:animalPairs.Views.Forms"
+       x:Class="animalPairs.AppShell">
+
+    <ShellContent ContentTemplate="{DataTemplate Forms:LoginPage}" />
+    <TabBar Shell.TabBarBackgroundColor="{StaticResource PrimaryColor}"
+            Shell.TabBarTitleColor="{StaticResource Gray-White}">
+        <Tab Title="Ajustes" Icon="">
+            <ShellContent ContentTemplate="{DataTemplate Settings:SettingPage}"/>
+        </Tab>
+        <Tab Title="Busqueda" Icon="">
+            <ShellContent ContentTemplate="{DataTemplate Catalog:ArticleCardPage}"/>
+        </Tab>
+        <Tab Title="Chat" Icon="">
+            <ShellContent ContentTemplate="{DataTemplate Chat:MessageDataTemplateSelector}"/>
+        </Tab>
+        <Tab Title="Perfil" Icon="">
+            <ShellContent ContentTemplate="{DataTemplate Profile:ContactProfilePage}"/>
+        </Tab>
+    </TabBar>
+</Shell>

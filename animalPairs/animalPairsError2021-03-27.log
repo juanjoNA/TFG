@@ -1,0 +1,56 @@
+
+
+Date:2021-03-27 13:21:56,716
+Thread:[1]
+Level:ERROR
+Logger:Syncfusion.Xamarin.UI.MainViewModel                         [(null)]
+Message:System.NullReferenceException: Referencia a objeto no establecida como instancia de un objeto.
+   en Syncfusion.Xamarin.UI.MainWindow.ItemCheckBox_Unchecked(Object sender, RoutedEventArgs e)
+
+
+Date:2021-03-27 13:21:56,735
+Thread:[1]
+Level:ERROR
+Logger:Syncfusion.Xamarin.UI.MainViewModel                         [(null)]
+Message:System.NullReferenceException: Referencia a objeto no establecida como instancia de un objeto.
+   en Syncfusion.Xamarin.UI.MainWindow.ItemCheckBox_Unchecked(Object sender, RoutedEventArgs e)
+
+
+Date:2021-03-27 13:21:59,521
+Thread:[1]
+Level:ERROR
+Logger:Syncfusion.Xamarin.UI.MainViewModel                         [(null)]
+Message:System.NullReferenceException: Referencia a objeto no establecida como instancia de un objeto.
+   en Syncfusion.Xamarin.UI.MainWindow.ItemCheckBox_Unchecked(Object sender, RoutedEventArgs e)
+
+
+Date:2021-03-27 13:21:59,527
+Thread:[1]
+Level:ERROR
+Logger:Syncfusion.Xamarin.UI.MainViewModel                         [(null)]
+Message:System.NullReferenceException: Referencia a objeto no establecida como instancia de un objeto.
+   en Syncfusion.Xamarin.UI.MainWindow.ItemCheckBox_Unchecked(Object sender, RoutedEventArgs e)
+
+
+Date:2021-03-27 13:21:59,531
+Thread:[1]
+Level:ERROR
+Logger:Syncfusion.Xamarin.UI.MainViewModel                         [(null)]
+Message:System.NullReferenceException: Referencia a objeto no establecida como instancia de un objeto.
+   en Syncfusion.Xamarin.UI.MainWindow.ItemCheckBox_Unchecked(Object sender, RoutedEventArgs e)
+
+
+Date:2021-03-27 13:21:59,535
+Thread:[1]
+Level:ERROR
+Logger:Syncfusion.Xamarin.UI.MainViewModel                         [(null)]
+Message:System.NullReferenceException: Referencia a objeto no establecida como instancia de un objeto.
+   en Syncfusion.Xamarin.UI.MainWindow.ItemCheckBox_Unchecked(Object sender, RoutedEventArgs e)
+
+
+Date:2021-03-27 13:21:59,538
+Thread:[1]
+Level:ERROR
+Logger:Syncfusion.Xamarin.UI.MainViewModel                         [(null)]
+Message:System.NullReferenceException: Referencia a objeto no establecida como instancia de un objeto.
+   en Syncfusion.Xamarin.UI.MainWindow.ItemCheckBox_Unchecked(Object sender, RoutedEventArgs e)
