@@ -1,4 +1,5 @@
-﻿using System.Windows.Input;
+﻿using animalPairs.Views.Forms;
+using System.Windows.Input;
 using Xamarin.Forms;
 using Xamarin.Forms.Internals;
 
@@ -91,7 +92,7 @@ namespace animalPairs.ViewModels.Forms
 
         private async void OnSignUp()
         {
-            await Xamarin.Forms.Shell.Current.GoToAsync("//NewUserPage");
+            await Shell.Current.GoToAsync(nameof(SignUpPage));
         }
 
 

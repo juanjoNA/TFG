@@ -1,5 +1,6 @@
 ﻿using animalPairs.Common;
 using animalPairs.Views.Chat;
+using animalPairs.Views.Forms;
 using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Internals;
@@ -39,50 +40,6 @@ namespace animalPairs.ViewModels.Forms
 
         /// <summary>
         /// Gets or sets the property that bounds with an entry that gets the name from user in the Sign Up page.
-        /// </summary>
-        public string Name
-        {
-            get
-            {
-                return this.name;
-            }
-
-            set
-            {
-                if (this.name == value)
-                {
-                    return;
-                }
-
-                this.name = value;
-                this.NotifyPropertyChanged();
-            }
-        }
-
-        /// <summary>
-        /// Gets or sets the property that bounds with an entry that gets the password from users in the Sign Up page.
-        /// </summary>
-        public string Password
-        {
-            get
-            {
-                return this.password;
-            }
-
-            set
-            {
-                if (this.password == value)
-                {
-                    return;
-                }
-
-                this.password = value;
-                this.NotifyPropertyChanged();
-            }
-        }
-
-        /// <summary>
-        /// Gets or sets the property that bounds with an entry that gets the password confirmation from users in the Sign Up page.
         /// </summary>
         public string ConfirmPassword
         {
@@ -125,9 +82,9 @@ namespace animalPairs.ViewModels.Forms
         /// Invoked when the Log in button is clicked.
         /// </summary>
         /// <param name="obj">The Object</param>
-        private void LoginClicked(object obj)
+        private async void LoginClicked(object obj)
         {
-            // Do something
+            await Shell.Current.GoToAsync(nameof(LoginPage));
         }
 
         /// <summary>

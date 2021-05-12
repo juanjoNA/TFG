@@ -17,16 +17,8 @@ namespace animalPairs.Views.Forms {
     public partial class SignUpPage : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
-        private global::animalPairs.Controls.BorderlessEntry PasswordEntry;
-        
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
-        private global::animalPairs.Controls.BorderlessEntry ConfirmPasswordEntry;
-        
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
             global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(SignUpPage));
-            PasswordEntry = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::animalPairs.Controls.BorderlessEntry>(this, "PasswordEntry");
-            ConfirmPasswordEntry = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::animalPairs.Controls.BorderlessEntry>(this, "ConfirmPasswordEntry");
         }
     }
 }

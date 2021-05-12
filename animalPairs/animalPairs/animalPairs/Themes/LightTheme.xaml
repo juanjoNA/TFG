@@ -4,14 +4,14 @@
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
 
-    <Color x:Key="PrimaryColor">#f54e5e</Color>
-    <Color x:Key="PrimaryDarkColor">#d0424f</Color>
-    <Color x:Key="PrimaryDarkenColor">#ab3641</Color>
-    <Color x:Key="PrimaryLighterColor">#edcacd</Color>
-    <Color x:Key="PrimaryGradient">#e83f94</Color>
-    <Color x:Key="PrimaryLight">#ffe8f4</Color>
-    <Color x:Key="SecondaryGradient">#7644ad</Color>
-    <Color x:Key="Secondary">#d54381</Color>
+    <Color x:Key="PrimaryColor">#b33a3a</Color>
+    <Color x:Key="PrimaryDarkColor">#751a2c</Color>
+    <Color x:Key="PrimaryDarkenColor">#261421</Color>
+    <Color x:Key="PrimaryLighterColor">#FFAFA5</Color>
+    <Color x:Key="PrimaryGradient">#6E1616</Color>
+    <Color x:Key="PrimaryLight">#f2b0a5</Color>
+    <Color x:Key="SecondaryGradient">#261421</Color>
+    <Color x:Key="Secondary">#d57056</Color>
     <Color x:Key="Green">#7ed321</Color>
     <Color x:Key="Red">#ff4a4a</Color>
     <Color x:Key="Orange">#ff844a</Color>

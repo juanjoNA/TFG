@@ -11,7 +11,7 @@
     xmlns:gradient="clr-namespace:Syncfusion.XForms.Graphics;assembly=Syncfusion.Core.XForms"
     xmlns:local="clr-namespace:animalPairs.Views.Forms"
     xmlns:viewModel="clr-namespace:animalPairs.ViewModels.Forms"
-    NavigationPage.HasNavigationBar="False"
+    Shell.NavBarIsVisible="False"
     Style="{StaticResource ContentPageStyle}">
 
     <ContentPage.Resources>

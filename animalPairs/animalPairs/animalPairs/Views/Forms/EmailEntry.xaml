@@ -56,10 +56,11 @@
                 Margin="15,-5,0,0"
                 FontSize="12"
                 IsVisible="{Binding Path=IsFocused, 
-                Source={x:Reference Email}, 
-                Converter={StaticResource StringToBooleanConverter}, 
-                ConverterParameter={x:Reference Email}}"
-                Text="Please enter the valid e-mail"
+                                    Source={x:Reference Email}, 
+                                    Converter={StaticResource StringToBooleanConverter}, 
+                                    ConverterParameter={x:Reference Email}
+                            }"
+                Text="Introduzca un email válido"
                 TextColor="{DynamicResource Red}"
                 VerticalOptions="FillAndExpand" />
 
