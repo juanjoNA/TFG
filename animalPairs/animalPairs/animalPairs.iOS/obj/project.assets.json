@@ -82,7 +82,7 @@
           "lib/xamarinios1.0/SkiaSharp.Views.Forms.dll": {}
         }
       },
-      "Syncfusion.Licensing/19.1.0.55": {
+      "Syncfusion.Licensing/19.1.0.63": {
         "type": "package",
         "compile": {
           "lib/Xamarin.iOS10/Syncfusion.Licensing.dll": {}
@@ -91,10 +91,10 @@
           "lib/Xamarin.iOS10/Syncfusion.Licensing.dll": {}
         }
       },
-      "Syncfusion.Xamarin.Buttons/19.1.0.55": {
+      "Syncfusion.Xamarin.Buttons/19.1.0.63": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Xamarin.Core": "19.1.0.55",
+          "Syncfusion.Xamarin.Core": "19.1.0.63",
           "Xamarin.Forms": "4.5.0.617"
         },
         "compile": {
@@ -106,10 +106,10 @@
           "lib/Xamarin.iOS10/Syncfusion.Buttons.XForms.iOS.dll": {}
         }
       },
-      "Syncfusion.Xamarin.Cards/19.1.0.55": {
+      "Syncfusion.Xamarin.Cards/19.1.0.63": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Xamarin.Core": "19.1.0.55",
+          "Syncfusion.Xamarin.Core": "19.1.0.63",
           "Xamarin.Forms": "4.5.0.617"
         },
         "compile": {
@@ -121,10 +121,10 @@
           "lib/Xamarin.iOS10/Syncfusion.Cards.XForms.iOS.dll": {}
         }
       },
-      "Syncfusion.Xamarin.Core/19.1.0.55": {
+      "Syncfusion.Xamarin.Core/19.1.0.63": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Licensing": "19.1.0.55",
+          "Syncfusion.Licensing": "19.1.0.63",
           "Xamarin.Forms": "4.5.0.617"
         },
         "compile": {
@@ -136,7 +136,7 @@
           "lib/Xamarin.iOS10/Syncfusion.Core.XForms.iOS.dll": {}
         }
       },
-      "Syncfusion.Xamarin.DataSource/19.1.0.55": {
+      "Syncfusion.Xamarin.DataSource/19.1.0.63": {
         "type": "package",
         "compile": {
           "lib/Xamarin.iOS10/Syncfusion.DataSource.Portable.dll": {}
@@ -145,7 +145,7 @@
           "lib/Xamarin.iOS10/Syncfusion.DataSource.Portable.dll": {}
         }
       },
-      "Syncfusion.Xamarin.GridCommon/19.1.0.55": {
+      "Syncfusion.Xamarin.GridCommon/19.1.0.63": {
         "type": "package",
         "compile": {
           "lib/Xamarin.iOS10/Syncfusion.GridCommon.Portable.dll": {}
@@ -154,10 +154,10 @@
           "lib/Xamarin.iOS10/Syncfusion.GridCommon.Portable.dll": {}
         }
       },
-      "Syncfusion.Xamarin.SfBadgeView/19.1.0.55": {
+      "Syncfusion.Xamarin.SfBadgeView/19.1.0.63": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Xamarin.Core": "19.1.0.55",
+          "Syncfusion.Xamarin.Core": "19.1.0.63",
           "Xamarin.Forms": "4.5.0.617"
         },
         "compile": {
@@ -169,10 +169,10 @@
           "lib/Xamarin.iOS10/Syncfusion.SfBadgeView.XForms.iOS.dll": {}
         }
       },
-      "Syncfusion.Xamarin.SfComboBox/19.1.0.55": {
+      "Syncfusion.Xamarin.SfComboBox/19.1.0.63": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Xamarin.Core": "19.1.0.55",
+          "Syncfusion.Xamarin.Core": "19.1.0.63",
           "Xamarin.Forms": "4.5.0.617"
         },
         "compile": {
@@ -184,12 +184,12 @@
           "lib/Xamarin.iOS10/Syncfusion.SfComboBox.XForms.iOS.dll": {}
         }
       },
-      "Syncfusion.Xamarin.SfListView/19.1.0.55": {
+      "Syncfusion.Xamarin.SfListView/19.1.0.63": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Xamarin.Core": "19.1.0.55",
-          "Syncfusion.Xamarin.DataSource": "19.1.0.55",
-          "Syncfusion.Xamarin.GridCommon": "19.1.0.55",
+          "Syncfusion.Xamarin.Core": "19.1.0.63",
+          "Syncfusion.Xamarin.DataSource": "19.1.0.63",
+          "Syncfusion.Xamarin.GridCommon": "19.1.0.63",
           "Xamarin.Forms": "4.5.0.617"
         },
         "compile": {
@@ -201,10 +201,27 @@
           "lib/Xamarin.iOS10/Syncfusion.SfListView.XForms.iOS.dll": {}
         }
       },
-      "Syncfusion.Xamarin.SfRating/19.1.0.55": {
+      "Syncfusion.Xamarin.SfPicker/19.1.0.63": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Xamarin.Core": "19.1.0.55",
+          "Syncfusion.Xamarin.Core": "19.1.0.63",
+          "Xamarin.Forms": "4.5.0.617"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Syncfusion.SfPicker.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfPicker.XForms.iOS.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfPicker.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Syncfusion.SfPicker.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfPicker.XForms.iOS.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfPicker.iOS.dll": {}
+        }
+      },
+      "Syncfusion.Xamarin.SfRating/19.1.0.63": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Xamarin.Core": "19.1.0.63",
           "Xamarin.Forms": "4.5.0.617"
         },
         "compile": {
@@ -218,10 +235,10 @@
           "lib/Xamarin.iOS10/Syncfusion.SfRating.iOS.dll": {}
         }
       },
-      "Syncfusion.Xamarin.SfRotator/19.1.0.55": {
+      "Syncfusion.Xamarin.SfRotator/19.1.0.63": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Xamarin.Core": "19.1.0.55",
+          "Syncfusion.Xamarin.Core": "19.1.0.63",
           "Xamarin.Forms": "4.5.0.617"
         },
         "compile": {
@@ -444,15 +461,16 @@
           "SkiaSharp.Extended": "1.60.0",
           "SkiaSharp.Svg": "1.60.0",
           "SkiaSharp.Views.Forms": "2.80.2",
-          "Syncfusion.Xamarin.Buttons": "19.1.0.55",
-          "Syncfusion.Xamarin.Cards": "19.1.0.55",
-          "Syncfusion.Xamarin.Core": "19.1.0.55",
-          "Syncfusion.Xamarin.DataSource": "19.1.0.55",
-          "Syncfusion.Xamarin.SfBadgeView": "19.1.0.55",
-          "Syncfusion.Xamarin.SfComboBox": "19.1.0.55",
-          "Syncfusion.Xamarin.SfListView": "19.1.0.55",
-          "Syncfusion.Xamarin.SfRating": "19.1.0.55",
-          "Syncfusion.Xamarin.SfRotator": "19.1.0.55",
+          "Syncfusion.Xamarin.Buttons": "19.1.0.63",
+          "Syncfusion.Xamarin.Cards": "19.1.0.63",
+          "Syncfusion.Xamarin.Core": "19.1.0.63",
+          "Syncfusion.Xamarin.DataSource": "19.1.0.63",
+          "Syncfusion.Xamarin.SfBadgeView": "19.1.0.63",
+          "Syncfusion.Xamarin.SfComboBox": "19.1.0.63",
+          "Syncfusion.Xamarin.SfListView": "19.1.0.63",
+          "Syncfusion.Xamarin.SfPicker": "19.1.0.63",
+          "Syncfusion.Xamarin.SfRating": "19.1.0.63",
+          "Syncfusion.Xamarin.SfRotator": "19.1.0.63",
           "Xam.Plugins.Forms.ImageCircle": "3.0.0.5",
           "Xamarin.Essentials": "1.6.1",
           "Xamarin.Firebase.iOS.Core": "6.10.4",
@@ -529,7 +547,7 @@
           "lib/xamarinios1.0/SkiaSharp.Views.Forms.dll": {}
         }
       },
-      "Syncfusion.Licensing/19.1.0.55": {
+      "Syncfusion.Licensing/19.1.0.63": {
         "type": "package",
         "compile": {
           "lib/Xamarin.iOS10/Syncfusion.Licensing.dll": {}
@@ -538,10 +556,10 @@
           "lib/Xamarin.iOS10/Syncfusion.Licensing.dll": {}
         }
       },
-      "Syncfusion.Xamarin.Buttons/19.1.0.55": {
+      "Syncfusion.Xamarin.Buttons/19.1.0.63": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Xamarin.Core": "19.1.0.55",
+          "Syncfusion.Xamarin.Core": "19.1.0.63",
           "Xamarin.Forms": "4.5.0.617"
         },
         "compile": {
@@ -553,10 +571,10 @@
           "lib/Xamarin.iOS10/Syncfusion.Buttons.XForms.iOS.dll": {}
         }
       },
-      "Syncfusion.Xamarin.Cards/19.1.0.55": {
+      "Syncfusion.Xamarin.Cards/19.1.0.63": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Xamarin.Core": "19.1.0.55",
+          "Syncfusion.Xamarin.Core": "19.1.0.63",
           "Xamarin.Forms": "4.5.0.617"
         },
         "compile": {
@@ -568,10 +586,10 @@
           "lib/Xamarin.iOS10/Syncfusion.Cards.XForms.iOS.dll": {}
         }
       },
-      "Syncfusion.Xamarin.Core/19.1.0.55": {
+      "Syncfusion.Xamarin.Core/19.1.0.63": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Licensing": "19.1.0.55",
+          "Syncfusion.Licensing": "19.1.0.63",
           "Xamarin.Forms": "4.5.0.617"
         },
         "compile": {
@@ -583,7 +601,7 @@
           "lib/Xamarin.iOS10/Syncfusion.Core.XForms.iOS.dll": {}
         }
       },
-      "Syncfusion.Xamarin.DataSource/19.1.0.55": {
+      "Syncfusion.Xamarin.DataSource/19.1.0.63": {
         "type": "package",
         "compile": {
           "lib/Xamarin.iOS10/Syncfusion.DataSource.Portable.dll": {}
@@ -592,7 +610,7 @@
           "lib/Xamarin.iOS10/Syncfusion.DataSource.Portable.dll": {}
         }
       },
-      "Syncfusion.Xamarin.GridCommon/19.1.0.55": {
+      "Syncfusion.Xamarin.GridCommon/19.1.0.63": {
         "type": "package",
         "compile": {
           "lib/Xamarin.iOS10/Syncfusion.GridCommon.Portable.dll": {}
@@ -601,10 +619,10 @@
           "lib/Xamarin.iOS10/Syncfusion.GridCommon.Portable.dll": {}
         }
       },
-      "Syncfusion.Xamarin.SfBadgeView/19.1.0.55": {
+      "Syncfusion.Xamarin.SfBadgeView/19.1.0.63": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Xamarin.Core": "19.1.0.55",
+          "Syncfusion.Xamarin.Core": "19.1.0.63",
           "Xamarin.Forms": "4.5.0.617"
         },
         "compile": {
@@ -616,10 +634,10 @@
           "lib/Xamarin.iOS10/Syncfusion.SfBadgeView.XForms.iOS.dll": {}
         }
       },
-      "Syncfusion.Xamarin.SfComboBox/19.1.0.55": {
+      "Syncfusion.Xamarin.SfComboBox/19.1.0.63": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Xamarin.Core": "19.1.0.55",
+          "Syncfusion.Xamarin.Core": "19.1.0.63",
           "Xamarin.Forms": "4.5.0.617"
         },
         "compile": {
@@ -631,12 +649,12 @@
           "lib/Xamarin.iOS10/Syncfusion.SfComboBox.XForms.iOS.dll": {}
         }
       },
-      "Syncfusion.Xamarin.SfListView/19.1.0.55": {
+      "Syncfusion.Xamarin.SfListView/19.1.0.63": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Xamarin.Core": "19.1.0.55",
-          "Syncfusion.Xamarin.DataSource": "19.1.0.55",
-          "Syncfusion.Xamarin.GridCommon": "19.1.0.55",
+          "Syncfusion.Xamarin.Core": "19.1.0.63",
+          "Syncfusion.Xamarin.DataSource": "19.1.0.63",
+          "Syncfusion.Xamarin.GridCommon": "19.1.0.63",
           "Xamarin.Forms": "4.5.0.617"
         },
         "compile": {
@@ -648,10 +666,27 @@
           "lib/Xamarin.iOS10/Syncfusion.SfListView.XForms.iOS.dll": {}
         }
       },
-      "Syncfusion.Xamarin.SfRating/19.1.0.55": {
+      "Syncfusion.Xamarin.SfPicker/19.1.0.63": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Xamarin.Core": "19.1.0.55",
+          "Syncfusion.Xamarin.Core": "19.1.0.63",
+          "Xamarin.Forms": "4.5.0.617"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Syncfusion.SfPicker.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfPicker.XForms.iOS.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfPicker.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Syncfusion.SfPicker.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfPicker.XForms.iOS.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfPicker.iOS.dll": {}
+        }
+      },
+      "Syncfusion.Xamarin.SfRating/19.1.0.63": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Xamarin.Core": "19.1.0.63",
           "Xamarin.Forms": "4.5.0.617"
         },
         "compile": {
@@ -665,10 +700,10 @@
           "lib/Xamarin.iOS10/Syncfusion.SfRating.iOS.dll": {}
         }
       },
-      "Syncfusion.Xamarin.SfRotator/19.1.0.55": {
+      "Syncfusion.Xamarin.SfRotator/19.1.0.63": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Xamarin.Core": "19.1.0.55",
+          "Syncfusion.Xamarin.Core": "19.1.0.63",
           "Xamarin.Forms": "4.5.0.617"
         },
         "compile": {
@@ -891,15 +926,16 @@
           "SkiaSharp.Extended": "1.60.0",
           "SkiaSharp.Svg": "1.60.0",
           "SkiaSharp.Views.Forms": "2.80.2",
-          "Syncfusion.Xamarin.Buttons": "19.1.0.55",
-          "Syncfusion.Xamarin.Cards": "19.1.0.55",
-          "Syncfusion.Xamarin.Core": "19.1.0.55",
-          "Syncfusion.Xamarin.DataSource": "19.1.0.55",
-          "Syncfusion.Xamarin.SfBadgeView": "19.1.0.55",
-          "Syncfusion.Xamarin.SfComboBox": "19.1.0.55",
-          "Syncfusion.Xamarin.SfListView": "19.1.0.55",
-          "Syncfusion.Xamarin.SfRating": "19.1.0.55",
-          "Syncfusion.Xamarin.SfRotator": "19.1.0.55",
+          "Syncfusion.Xamarin.Buttons": "19.1.0.63",
+          "Syncfusion.Xamarin.Cards": "19.1.0.63",
+          "Syncfusion.Xamarin.Core": "19.1.0.63",
+          "Syncfusion.Xamarin.DataSource": "19.1.0.63",
+          "Syncfusion.Xamarin.SfBadgeView": "19.1.0.63",
+          "Syncfusion.Xamarin.SfComboBox": "19.1.0.63",
+          "Syncfusion.Xamarin.SfListView": "19.1.0.63",
+          "Syncfusion.Xamarin.SfPicker": "19.1.0.63",
+          "Syncfusion.Xamarin.SfRating": "19.1.0.63",
+          "Syncfusion.Xamarin.SfRotator": "19.1.0.63",
           "Xam.Plugins.Forms.ImageCircle": "3.0.0.5",
           "Xamarin.Essentials": "1.6.1",
           "Xamarin.Firebase.iOS.Core": "6.10.4",
@@ -979,7 +1015,7 @@
           "lib/xamarinios1.0/SkiaSharp.Views.Forms.dll": {}
         }
       },
-      "Syncfusion.Licensing/19.1.0.55": {
+      "Syncfusion.Licensing/19.1.0.63": {
         "type": "package",
         "compile": {
           "lib/Xamarin.iOS10/Syncfusion.Licensing.dll": {}
@@ -988,10 +1024,10 @@
           "lib/Xamarin.iOS10/Syncfusion.Licensing.dll": {}
         }
       },
-      "Syncfusion.Xamarin.Buttons/19.1.0.55": {
+      "Syncfusion.Xamarin.Buttons/19.1.0.63": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Xamarin.Core": "19.1.0.55",
+          "Syncfusion.Xamarin.Core": "19.1.0.63",
           "Xamarin.Forms": "4.5.0.617"
         },
         "compile": {
@@ -1003,10 +1039,10 @@
           "lib/Xamarin.iOS10/Syncfusion.Buttons.XForms.iOS.dll": {}
         }
       },
-      "Syncfusion.Xamarin.Cards/19.1.0.55": {
+      "Syncfusion.Xamarin.Cards/19.1.0.63": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Xamarin.Core": "19.1.0.55",
+          "Syncfusion.Xamarin.Core": "19.1.0.63",
           "Xamarin.Forms": "4.5.0.617"
         },
         "compile": {
@@ -1018,10 +1054,10 @@
           "lib/Xamarin.iOS10/Syncfusion.Cards.XForms.iOS.dll": {}
         }
       },
-      "Syncfusion.Xamarin.Core/19.1.0.55": {
+      "Syncfusion.Xamarin.Core/19.1.0.63": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Licensing": "19.1.0.55",
+          "Syncfusion.Licensing": "19.1.0.63",
           "Xamarin.Forms": "4.5.0.617"
         },
         "compile": {
@@ -1033,7 +1069,7 @@
           "lib/Xamarin.iOS10/Syncfusion.Core.XForms.iOS.dll": {}
         }
       },
-      "Syncfusion.Xamarin.DataSource/19.1.0.55": {
+      "Syncfusion.Xamarin.DataSource/19.1.0.63": {
         "type": "package",
         "compile": {
           "lib/Xamarin.iOS10/Syncfusion.DataSource.Portable.dll": {}
@@ -1042,7 +1078,7 @@
           "lib/Xamarin.iOS10/Syncfusion.DataSource.Portable.dll": {}
         }
       },
-      "Syncfusion.Xamarin.GridCommon/19.1.0.55": {
+      "Syncfusion.Xamarin.GridCommon/19.1.0.63": {
         "type": "package",
         "compile": {
           "lib/Xamarin.iOS10/Syncfusion.GridCommon.Portable.dll": {}
@@ -1051,10 +1087,10 @@
           "lib/Xamarin.iOS10/Syncfusion.GridCommon.Portable.dll": {}
         }
       },
-      "Syncfusion.Xamarin.SfBadgeView/19.1.0.55": {
+      "Syncfusion.Xamarin.SfBadgeView/19.1.0.63": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Xamarin.Core": "19.1.0.55",
+          "Syncfusion.Xamarin.Core": "19.1.0.63",
           "Xamarin.Forms": "4.5.0.617"
         },
         "compile": {
@@ -1066,10 +1102,10 @@
           "lib/Xamarin.iOS10/Syncfusion.SfBadgeView.XForms.iOS.dll": {}
         }
       },
-      "Syncfusion.Xamarin.SfComboBox/19.1.0.55": {
+      "Syncfusion.Xamarin.SfComboBox/19.1.0.63": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Xamarin.Core": "19.1.0.55",
+          "Syncfusion.Xamarin.Core": "19.1.0.63",
           "Xamarin.Forms": "4.5.0.617"
         },
         "compile": {
@@ -1081,12 +1117,12 @@
           "lib/Xamarin.iOS10/Syncfusion.SfComboBox.XForms.iOS.dll": {}
         }
       },
-      "Syncfusion.Xamarin.SfListView/19.1.0.55": {
+      "Syncfusion.Xamarin.SfListView/19.1.0.63": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Xamarin.Core": "19.1.0.55",
-          "Syncfusion.Xamarin.DataSource": "19.1.0.55",
-          "Syncfusion.Xamarin.GridCommon": "19.1.0.55",
+          "Syncfusion.Xamarin.Core": "19.1.0.63",
+          "Syncfusion.Xamarin.DataSource": "19.1.0.63",
+          "Syncfusion.Xamarin.GridCommon": "19.1.0.63",
           "Xamarin.Forms": "4.5.0.617"
         },
         "compile": {
@@ -1098,10 +1134,27 @@
           "lib/Xamarin.iOS10/Syncfusion.SfListView.XForms.iOS.dll": {}
         }
       },
-      "Syncfusion.Xamarin.SfRating/19.1.0.55": {
+      "Syncfusion.Xamarin.SfPicker/19.1.0.63": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Xamarin.Core": "19.1.0.55",
+          "Syncfusion.Xamarin.Core": "19.1.0.63",
+          "Xamarin.Forms": "4.5.0.617"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Syncfusion.SfPicker.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfPicker.XForms.iOS.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfPicker.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Syncfusion.SfPicker.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfPicker.XForms.iOS.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfPicker.iOS.dll": {}
+        }
+      },
+      "Syncfusion.Xamarin.SfRating/19.1.0.63": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Xamarin.Core": "19.1.0.63",
           "Xamarin.Forms": "4.5.0.617"
         },
         "compile": {
@@ -1115,10 +1168,10 @@
           "lib/Xamarin.iOS10/Syncfusion.SfRating.iOS.dll": {}
         }
       },
-      "Syncfusion.Xamarin.SfRotator/19.1.0.55": {
+      "Syncfusion.Xamarin.SfRotator/19.1.0.63": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Xamarin.Core": "19.1.0.55",
+          "Syncfusion.Xamarin.Core": "19.1.0.63",
           "Xamarin.Forms": "4.5.0.617"
         },
         "compile": {
@@ -1341,15 +1394,16 @@
           "SkiaSharp.Extended": "1.60.0",
           "SkiaSharp.Svg": "1.60.0",
           "SkiaSharp.Views.Forms": "2.80.2",
-          "Syncfusion.Xamarin.Buttons": "19.1.0.55",
-          "Syncfusion.Xamarin.Cards": "19.1.0.55",
-          "Syncfusion.Xamarin.Core": "19.1.0.55",
-          "Syncfusion.Xamarin.DataSource": "19.1.0.55",
-          "Syncfusion.Xamarin.SfBadgeView": "19.1.0.55",
-          "Syncfusion.Xamarin.SfComboBox": "19.1.0.55",
-          "Syncfusion.Xamarin.SfListView": "19.1.0.55",
-          "Syncfusion.Xamarin.SfRating": "19.1.0.55",
-          "Syncfusion.Xamarin.SfRotator": "19.1.0.55",
+          "Syncfusion.Xamarin.Buttons": "19.1.0.63",
+          "Syncfusion.Xamarin.Cards": "19.1.0.63",
+          "Syncfusion.Xamarin.Core": "19.1.0.63",
+          "Syncfusion.Xamarin.DataSource": "19.1.0.63",
+          "Syncfusion.Xamarin.SfBadgeView": "19.1.0.63",
+          "Syncfusion.Xamarin.SfComboBox": "19.1.0.63",
+          "Syncfusion.Xamarin.SfListView": "19.1.0.63",
+          "Syncfusion.Xamarin.SfPicker": "19.1.0.63",
+          "Syncfusion.Xamarin.SfRating": "19.1.0.63",
+          "Syncfusion.Xamarin.SfRotator": "19.1.0.63",
           "Xam.Plugins.Forms.ImageCircle": "3.0.0.5",
           "Xamarin.Essentials": "1.6.1",
           "Xamarin.Firebase.iOS.Core": "6.10.4",
@@ -1429,7 +1483,7 @@
           "lib/xamarinios1.0/SkiaSharp.Views.Forms.dll": {}
         }
       },
-      "Syncfusion.Licensing/19.1.0.55": {
+      "Syncfusion.Licensing/19.1.0.63": {
         "type": "package",
         "compile": {
           "lib/Xamarin.iOS10/Syncfusion.Licensing.dll": {}
@@ -1438,10 +1492,10 @@
           "lib/Xamarin.iOS10/Syncfusion.Licensing.dll": {}
         }
       },
-      "Syncfusion.Xamarin.Buttons/19.1.0.55": {
+      "Syncfusion.Xamarin.Buttons/19.1.0.63": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Xamarin.Core": "19.1.0.55",
+          "Syncfusion.Xamarin.Core": "19.1.0.63",
           "Xamarin.Forms": "4.5.0.617"
         },
         "compile": {
@@ -1453,10 +1507,10 @@
           "lib/Xamarin.iOS10/Syncfusion.Buttons.XForms.iOS.dll": {}
         }
       },
-      "Syncfusion.Xamarin.Cards/19.1.0.55": {
+      "Syncfusion.Xamarin.Cards/19.1.0.63": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Xamarin.Core": "19.1.0.55",
+          "Syncfusion.Xamarin.Core": "19.1.0.63",
           "Xamarin.Forms": "4.5.0.617"
         },
         "compile": {
@@ -1468,10 +1522,10 @@
           "lib/Xamarin.iOS10/Syncfusion.Cards.XForms.iOS.dll": {}
         }
       },
-      "Syncfusion.Xamarin.Core/19.1.0.55": {
+      "Syncfusion.Xamarin.Core/19.1.0.63": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Licensing": "19.1.0.55",
+          "Syncfusion.Licensing": "19.1.0.63",
           "Xamarin.Forms": "4.5.0.617"
         },
         "compile": {
@@ -1483,7 +1537,7 @@
           "lib/Xamarin.iOS10/Syncfusion.Core.XForms.iOS.dll": {}
         }
       },
-      "Syncfusion.Xamarin.DataSource/19.1.0.55": {
+      "Syncfusion.Xamarin.DataSource/19.1.0.63": {
         "type": "package",
         "compile": {
           "lib/Xamarin.iOS10/Syncfusion.DataSource.Portable.dll": {}
@@ -1492,7 +1546,7 @@
           "lib/Xamarin.iOS10/Syncfusion.DataSource.Portable.dll": {}
         }
       },
-      "Syncfusion.Xamarin.GridCommon/19.1.0.55": {
+      "Syncfusion.Xamarin.GridCommon/19.1.0.63": {
         "type": "package",
         "compile": {
           "lib/Xamarin.iOS10/Syncfusion.GridCommon.Portable.dll": {}
@@ -1501,10 +1555,10 @@
           "lib/Xamarin.iOS10/Syncfusion.GridCommon.Portable.dll": {}
         }
       },
-      "Syncfusion.Xamarin.SfBadgeView/19.1.0.55": {
+      "Syncfusion.Xamarin.SfBadgeView/19.1.0.63": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Xamarin.Core": "19.1.0.55",
+          "Syncfusion.Xamarin.Core": "19.1.0.63",
           "Xamarin.Forms": "4.5.0.617"
         },
         "compile": {
@@ -1516,10 +1570,10 @@
           "lib/Xamarin.iOS10/Syncfusion.SfBadgeView.XForms.iOS.dll": {}
         }
       },
-      "Syncfusion.Xamarin.SfComboBox/19.1.0.55": {
+      "Syncfusion.Xamarin.SfComboBox/19.1.0.63": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Xamarin.Core": "19.1.0.55",
+          "Syncfusion.Xamarin.Core": "19.1.0.63",
           "Xamarin.Forms": "4.5.0.617"
         },
         "compile": {
@@ -1531,12 +1585,12 @@
           "lib/Xamarin.iOS10/Syncfusion.SfComboBox.XForms.iOS.dll": {}
         }
       },
-      "Syncfusion.Xamarin.SfListView/19.1.0.55": {
+      "Syncfusion.Xamarin.SfListView/19.1.0.63": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Xamarin.Core": "19.1.0.55",
-          "Syncfusion.Xamarin.DataSource": "19.1.0.55",
-          "Syncfusion.Xamarin.GridCommon": "19.1.0.55",
+          "Syncfusion.Xamarin.Core": "19.1.0.63",
+          "Syncfusion.Xamarin.DataSource": "19.1.0.63",
+          "Syncfusion.Xamarin.GridCommon": "19.1.0.63",
           "Xamarin.Forms": "4.5.0.617"
         },
         "compile": {
@@ -1548,10 +1602,27 @@
           "lib/Xamarin.iOS10/Syncfusion.SfListView.XForms.iOS.dll": {}
         }
       },
-      "Syncfusion.Xamarin.SfRating/19.1.0.55": {
+      "Syncfusion.Xamarin.SfPicker/19.1.0.63": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Xamarin.Core": "19.1.0.55",
+          "Syncfusion.Xamarin.Core": "19.1.0.63",
+          "Xamarin.Forms": "4.5.0.617"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/Syncfusion.SfPicker.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfPicker.XForms.iOS.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfPicker.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Syncfusion.SfPicker.XForms.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfPicker.XForms.iOS.dll": {},
+          "lib/Xamarin.iOS10/Syncfusion.SfPicker.iOS.dll": {}
+        }
+      },
+      "Syncfusion.Xamarin.SfRating/19.1.0.63": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Xamarin.Core": "19.1.0.63",
           "Xamarin.Forms": "4.5.0.617"
         },
         "compile": {
@@ -1565,10 +1636,10 @@
           "lib/Xamarin.iOS10/Syncfusion.SfRating.iOS.dll": {}
         }
       },
-      "Syncfusion.Xamarin.SfRotator/19.1.0.55": {
+      "Syncfusion.Xamarin.SfRotator/19.1.0.63": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Xamarin.Core": "19.1.0.55",
+          "Syncfusion.Xamarin.Core": "19.1.0.63",
           "Xamarin.Forms": "4.5.0.617"
         },
         "compile": {
@@ -1791,15 +1862,16 @@
           "SkiaSharp.Extended": "1.60.0",
           "SkiaSharp.Svg": "1.60.0",
           "SkiaSharp.Views.Forms": "2.80.2",
-          "Syncfusion.Xamarin.Buttons": "19.1.0.55",
-          "Syncfusion.Xamarin.Cards": "19.1.0.55",
-          "Syncfusion.Xamarin.Core": "19.1.0.55",
-          "Syncfusion.Xamarin.DataSource": "19.1.0.55",
-          "Syncfusion.Xamarin.SfBadgeView": "19.1.0.55",
-          "Syncfusion.Xamarin.SfComboBox": "19.1.0.55",
-          "Syncfusion.Xamarin.SfListView": "19.1.0.55",
-          "Syncfusion.Xamarin.SfRating": "19.1.0.55",
-          "Syncfusion.Xamarin.SfRotator": "19.1.0.55",
+          "Syncfusion.Xamarin.Buttons": "19.1.0.63",
+          "Syncfusion.Xamarin.Cards": "19.1.0.63",
+          "Syncfusion.Xamarin.Core": "19.1.0.63",
+          "Syncfusion.Xamarin.DataSource": "19.1.0.63",
+          "Syncfusion.Xamarin.SfBadgeView": "19.1.0.63",
+          "Syncfusion.Xamarin.SfComboBox": "19.1.0.63",
+          "Syncfusion.Xamarin.SfListView": "19.1.0.63",
+          "Syncfusion.Xamarin.SfPicker": "19.1.0.63",
+          "Syncfusion.Xamarin.SfRating": "19.1.0.63",
+          "Syncfusion.Xamarin.SfRotator": "19.1.0.63",
           "Xam.Plugins.Forms.ImageCircle": "3.0.0.5",
           "Xamarin.Essentials": "1.6.1",
           "Xamarin.Firebase.iOS.Core": "6.10.4",
@@ -1997,10 +2069,10 @@
         "skiasharp.views.forms.nuspec"
       ]
     },
-    "Syncfusion.Licensing/19.1.0.55": {
-      "sha512": "L2hVx42JzxwH/EyJue2nMfv0lAJlEQ4h+MDl15xuRCpQzXbRkzUFMxwy4o45jZ6ezKM06Gd4eaGU/f97MlnOig==",
+    "Syncfusion.Licensing/19.1.0.63": {
+      "sha512": "SXRZFTbWpSEADWQJQ2tgoeA7Ib0tSgZ4PdzVJKKxuGWprAsu9XcbcZTCfG6AEHdrsD5iBW8aSs3Tb4as8EMdZg==",
       "type": "package",
-      "path": "syncfusion.licensing/19.1.0.55",
+      "path": "syncfusion.licensing/19.1.0.63",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2022,14 +2094,14 @@
         "lib/netstandard2.0/Syncfusion.Licensing.dll",
         "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.Licensing.dll",
         "lib/uap10.0/Syncfusion.Licensing.dll",
-        "syncfusion.licensing.19.1.0.55.nupkg.sha512",
+        "syncfusion.licensing.19.1.0.63.nupkg.sha512",
         "syncfusion.licensing.nuspec"
       ]
     },
-    "Syncfusion.Xamarin.Buttons/19.1.0.55": {
-      "sha512": "gv384hUN56Fy4m1daNswTjBS3va+/FeMChT5Tg3jfM+IKd0ABMUUzm+PLFqWdrlHsimDSaeo9+9NETiZENUh2A==",
+    "Syncfusion.Xamarin.Buttons/19.1.0.63": {
+      "sha512": "Z/guLGd2qgiDh+ILpYavQoZzJV3f1cc8SU0HBaHodpGioYNUUBOP/I8Qk2OSyKqeEWjzOMDcst2Yy4F49HvY4w==",
       "type": "package",
-      "path": "syncfusion.xamarin.buttons/19.1.0.55",
+      "path": "syncfusion.xamarin.buttons/19.1.0.63",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2056,14 +2128,14 @@
         "lib/uap10.0/Syncfusion.Buttons.XForms.UWP/Themes/Generic.xaml",
         "lib/uap10.0/Syncfusion.Buttons.XForms.dll",
         "lib/uap10.0/Syncfusion.Buttons.XForms.xml",
-        "syncfusion.xamarin.buttons.19.1.0.55.nupkg.sha512",
+        "syncfusion.xamarin.buttons.19.1.0.63.nupkg.sha512",
         "syncfusion.xamarin.buttons.nuspec"
       ]
     },
-    "Syncfusion.Xamarin.Cards/19.1.0.55": {
-      "sha512": "3nOzaG4VstH6DrGajX/yQbV2ks7IbQj97KNOF852yYh4PcJ+QPXh+3RRftQsc8v3gGe2WKUXfbcLkVjp5CJf3A==",
+    "Syncfusion.Xamarin.Cards/19.1.0.63": {
+      "sha512": "2f5qT8awwdZicFf7cHwzgWkXnrBa7P6lorm5694I92r7jI5opqJtiIfI28jF4scoFzU57hlLYx+bl5xyjo1cRA==",
       "type": "package",
-      "path": "syncfusion.xamarin.cards/19.1.0.55",
+      "path": "syncfusion.xamarin.cards/19.1.0.63",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2084,14 +2156,14 @@
         "lib/uap10.0/Syncfusion.Cards.XForms.UWP.xml",
         "lib/uap10.0/Syncfusion.Cards.XForms.dll",
         "lib/uap10.0/Syncfusion.Cards.XForms.xml",
-        "syncfusion.xamarin.cards.19.1.0.55.nupkg.sha512",
+        "syncfusion.xamarin.cards.19.1.0.63.nupkg.sha512",
         "syncfusion.xamarin.cards.nuspec"
       ]
     },
-    "Syncfusion.Xamarin.Core/19.1.0.55": {
-      "sha512": "YZIJ/KA+CQhVzjPeOM1GldWRuUnXcFbZ0b5EK7wbwOjH5mn/LXH7KZPM9/jZTL5p7Zp8sc/mXMFqUj5nP7U1mA==",
+    "Syncfusion.Xamarin.Core/19.1.0.63": {
+      "sha512": "GgYc7c6lUqAj4PUxp9nijwcVKkIq/E/9ft4MCi6b80uKDB7nJrhU0GV0b+CgNp+cHiOgqNr/nA6OYGcy5u+kRQ==",
       "type": "package",
-      "path": "syncfusion.xamarin.core/19.1.0.55",
+      "path": "syncfusion.xamarin.core/19.1.0.63",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2119,14 +2191,14 @@
         "lib/uap10.0/Syncfusion.Core.XForms.UWP/TILRenderer/ToggleIcons/ToggleVisibleIcon.xaml",
         "lib/uap10.0/Syncfusion.Core.XForms.dll",
         "lib/uap10.0/Syncfusion.Core.XForms.xml",
-        "syncfusion.xamarin.core.19.1.0.55.nupkg.sha512",
+        "syncfusion.xamarin.core.19.1.0.63.nupkg.sha512",
         "syncfusion.xamarin.core.nuspec"
       ]
     },
-    "Syncfusion.Xamarin.DataSource/19.1.0.55": {
-      "sha512": "OcOUCAgmHyMSnknScCgadANSHzMJrCORWrvg8b5pVjCGFCYeS3qNYVkQLMLudobtT72lmwwF/r5IKLRrTJTTXA==",
+    "Syncfusion.Xamarin.DataSource/19.1.0.63": {
+      "sha512": "WCWTs+HKWdb7dItOwrrL2+crFpiWzrlWSPiYOJhfDhdLRUoYHZ5Kcdyh3FtiZvza3AY30ok7L1CfMWCL98IJUw==",
       "type": "package",
-      "path": "syncfusion.xamarin.datasource/19.1.0.55",
+      "path": "syncfusion.xamarin.datasource/19.1.0.63",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2142,14 +2214,14 @@
         "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.DataSource.Portable.dll",
         "lib/uap10.0/Syncfusion.DataSource.Portable.XML",
         "lib/uap10.0/Syncfusion.DataSource.Portable.dll",
-        "syncfusion.xamarin.datasource.19.1.0.55.nupkg.sha512",
+        "syncfusion.xamarin.datasource.19.1.0.63.nupkg.sha512",
         "syncfusion.xamarin.datasource.nuspec"
       ]
     },
-    "Syncfusion.Xamarin.GridCommon/19.1.0.55": {
-      "sha512": "uoGy8ihG+pGWV6zopjrOYVQ5Xj8FovmMthtGHMQ0GTfu3hSP4LxZ6QLu5zEqXGnExyUX+e1Q1htwYmUh2OkI4w==",
+    "Syncfusion.Xamarin.GridCommon/19.1.0.63": {
+      "sha512": "sQiyxqE/feX6N5s32zT8kw1Aw8AEBkdNg2iOFmb/aUfAiW2u43v2l0VCtPMHD1LXlKqnSeeLvLlONf/BGoIWmQ==",
       "type": "package",
-      "path": "syncfusion.xamarin.gridcommon/19.1.0.55",
+      "path": "syncfusion.xamarin.gridcommon/19.1.0.63",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2167,14 +2239,14 @@
         "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.GridCommon.Portable.dll",
         "lib/uap10.0/Syncfusion.GridCommon.Portable.XML",
         "lib/uap10.0/Syncfusion.GridCommon.Portable.dll",
-        "syncfusion.xamarin.gridcommon.19.1.0.55.nupkg.sha512",
+        "syncfusion.xamarin.gridcommon.19.1.0.63.nupkg.sha512",
         "syncfusion.xamarin.gridcommon.nuspec"
       ]
     },
-    "Syncfusion.Xamarin.SfBadgeView/19.1.0.55": {
-      "sha512": "BmghOfbJIbfihvKt0sk9ii5kBcHyeV+yr9pZlZu8GcUZt75f39zU/2m1VfIamYCSObACgtvV7n1KKUF1eIcvug==",
+    "Syncfusion.Xamarin.SfBadgeView/19.1.0.63": {
+      "sha512": "tBX0mJibXxa/Mm7lpSR4uKNHyL7qDh5tSvmlWlwnz1FcuKgHJA7Sa9r6GtPXd5yBfzzKrH4HHXwxxKJdbZYtIQ==",
       "type": "package",
-      "path": "syncfusion.xamarin.sfbadgeview/19.1.0.55",
+      "path": "syncfusion.xamarin.sfbadgeview/19.1.0.63",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2198,14 +2270,14 @@
         "lib/uap10.0/Syncfusion.SfBadgeView.XForms.UWP/Properties/Syncfusion.SfBadgeView.XForms.UWP.rd.xml",
         "lib/uap10.0/Syncfusion.SfBadgeView.XForms.dll",
         "lib/uap10.0/Syncfusion.SfBadgeView.XForms.xml",
-        "syncfusion.xamarin.sfbadgeview.19.1.0.55.nupkg.sha512",
+        "syncfusion.xamarin.sfbadgeview.19.1.0.63.nupkg.sha512",
         "syncfusion.xamarin.sfbadgeview.nuspec"
       ]
     },
-    "Syncfusion.Xamarin.SfComboBox/19.1.0.55": {
-      "sha512": "q5hDM1MjDYbQtgPVKW3Qn7S/80yVUNkQz2xg/D8S0N/RSEN88VbiGEhZ30kwYeXCnE3arWbF2XBMLaK+s9MOpg==",
+    "Syncfusion.Xamarin.SfComboBox/19.1.0.63": {
+      "sha512": "535J3xdswVdOmaRr5YTp+XQlsW5TWOh0lYdS8r3LmBvZoZ1RTikd9n9bibfnkF8D5UeELWYM5hCGx5uuU94M5w==",
       "type": "package",
-      "path": "syncfusion.xamarin.sfcombobox/19.1.0.55",
+      "path": "syncfusion.xamarin.sfcombobox/19.1.0.63",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2232,14 +2304,14 @@
         "lib/uap10.0/Syncfusion.SfComboBox.XForms.UWP/dropdownbuttonimage.png",
         "lib/uap10.0/Syncfusion.SfComboBox.XForms.XML",
         "lib/uap10.0/Syncfusion.SfComboBox.XForms.dll",
-        "syncfusion.xamarin.sfcombobox.19.1.0.55.nupkg.sha512",
+        "syncfusion.xamarin.sfcombobox.19.1.0.63.nupkg.sha512",
         "syncfusion.xamarin.sfcombobox.nuspec"
       ]
     },
-    "Syncfusion.Xamarin.SfListView/19.1.0.55": {
-      "sha512": "KfyeWrvJdC+FUvr0ocbmBO4FGs+OIwQCzOXNJgnPIg4bbfDJTsMAnJBB5iuSKwEmqv8I5uFvbG9Q0UGPPFOp/g==",
+    "Syncfusion.Xamarin.SfListView/19.1.0.63": {
+      "sha512": "jqpt+VIZDVuFO7YmS91ChJKubfowy1zE/5/Pl+2auPJSloDe/kmACKUTEFlvFfNdPTg7RBjDI2rfFC+aKZlJTA==",
       "type": "package",
-      "path": "syncfusion.xamarin.sflistview/19.1.0.55",
+      "path": "syncfusion.xamarin.sflistview/19.1.0.63",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2262,14 +2334,48 @@
         "lib/uap10.0/Syncfusion.SfListView.XForms.UWP.dll",
         "lib/uap10.0/Syncfusion.SfListView.XForms.dll",
         "lib/uap10.0/Syncfusion.SfListView.XForms.xml",
-        "syncfusion.xamarin.sflistview.19.1.0.55.nupkg.sha512",
+        "syncfusion.xamarin.sflistview.19.1.0.63.nupkg.sha512",
         "syncfusion.xamarin.sflistview.nuspec"
       ]
     },
-    "Syncfusion.Xamarin.SfRating/19.1.0.55": {
-      "sha512": "aeFl2ThWQM6whdsUUoDW5TjhenwYY4dWqvURsnQKbmYrlj5apApRMGHnomqpH8st7qWkDkqFdxthcHYl4XsjAw==",
+    "Syncfusion.Xamarin.SfPicker/19.1.0.63": {
+      "sha512": "I3DBun917qOcBH+dpXh0oj2r3dCKh7+TMtdFrNakBevBoAjml/+qVmygfA8opFlra6SmSi+ndt41dLksyhCqxQ==",
       "type": "package",
-      "path": "syncfusion.xamarin.sfrating/19.1.0.55",
+      "path": "syncfusion.xamarin.sfpicker/19.1.0.63",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/MonoAndroid10.0/Syncfusion.SfPicker.Android.dll",
+        "lib/MonoAndroid10.0/Syncfusion.SfPicker.Android.xml",
+        "lib/MonoAndroid10.0/Syncfusion.SfPicker.XForms.Android.dll",
+        "lib/MonoAndroid10.0/Syncfusion.SfPicker.XForms.XML",
+        "lib/MonoAndroid10.0/Syncfusion.SfPicker.XForms.dll",
+        "lib/MonoAndroid90/Syncfusion.SfPicker.Android.dll",
+        "lib/MonoAndroid90/Syncfusion.SfPicker.Android.xml",
+        "lib/MonoAndroid90/Syncfusion.SfPicker.XForms.Android.dll",
+        "lib/MonoAndroid90/Syncfusion.SfPicker.XForms.XML",
+        "lib/MonoAndroid90/Syncfusion.SfPicker.XForms.dll",
+        "lib/Xamarin.iOS10/Syncfusion.SfPicker.XForms.XML",
+        "lib/Xamarin.iOS10/Syncfusion.SfPicker.XForms.dll",
+        "lib/Xamarin.iOS10/Syncfusion.SfPicker.XForms.iOS.dll",
+        "lib/Xamarin.iOS10/Syncfusion.SfPicker.iOS.dll",
+        "lib/Xamarin.iOS10/Syncfusion.SfPicker.iOS.xml",
+        "lib/netstandard2.0/Syncfusion.SfPicker.XForms.XML",
+        "lib/netstandard2.0/Syncfusion.SfPicker.XForms.dll",
+        "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.SfPicker.XForms.XML",
+        "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.SfPicker.XForms.dll",
+        "lib/uap10.0/Syncfusion.SfPicker.XForms.UWP.XML",
+        "lib/uap10.0/Syncfusion.SfPicker.XForms.UWP.dll",
+        "lib/uap10.0/Syncfusion.SfPicker.XForms.XML",
+        "lib/uap10.0/Syncfusion.SfPicker.XForms.dll",
+        "syncfusion.xamarin.sfpicker.19.1.0.63.nupkg.sha512",
+        "syncfusion.xamarin.sfpicker.nuspec"
+      ]
+    },
+    "Syncfusion.Xamarin.SfRating/19.1.0.63": {
+      "sha512": "E6mTNityOdvZN/WRaPMYfnt0TFcikEA/Z8RF72YO3Vmq5Gpbfa2CLGw6726Wiydam8QofFqeH55oqW/nrXcxBA==",
+      "type": "package",
+      "path": "syncfusion.xamarin.sfrating/19.1.0.63",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2295,14 +2401,14 @@
         "lib/uap10.0/Syncfusion.SfRating.XForms.UWP.dll",
         "lib/uap10.0/Syncfusion.SfRating.XForms.XML",
         "lib/uap10.0/Syncfusion.SfRating.XForms.dll",
-        "syncfusion.xamarin.sfrating.19.1.0.55.nupkg.sha512",
+        "syncfusion.xamarin.sfrating.19.1.0.63.nupkg.sha512",
         "syncfusion.xamarin.sfrating.nuspec"
       ]
     },
-    "Syncfusion.Xamarin.SfRotator/19.1.0.55": {
-      "sha512": "0BsQh7uUsJhAPT0iiIyEF4esKm9SW4vtrJIvj2jwXqiZ+ApwKAKRTX9YUd944QOAQtmqvbOydOOnUUK2X668vA==",
+    "Syncfusion.Xamarin.SfRotator/19.1.0.63": {
+      "sha512": "h94u1mYsYeUTYo/InuCxmVHBbwCM05H4q1ltKpD466shRA0OyxA8PxIeENzYQ1btXc67E4iQADhf4YRcm0pj4w==",
       "type": "package",
-      "path": "syncfusion.xamarin.sfrotator/19.1.0.55",
+      "path": "syncfusion.xamarin.sfrotator/19.1.0.63",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2329,7 +2435,7 @@
         "lib/uap10.0/Syncfusion.SfRotator.XForms.UWP.dll",
         "lib/uap10.0/Syncfusion.SfRotator.XForms.dll",
         "lib/uap10.0/Syncfusion.SfRotator.XForms.xml",
-        "syncfusion.xamarin.sfrotator.19.1.0.55.nupkg.sha512",
+        "syncfusion.xamarin.sfrotator.19.1.0.63.nupkg.sha512",
         "syncfusion.xamarin.sfrotator.nuspec"
       ]
     },
@@ -2734,15 +2840,16 @@
       "SkiaSharp.Extended >= 1.60.0",
       "SkiaSharp.Svg >= 1.60.0",
       "SkiaSharp.Views.Forms >= 2.80.2",
-      "Syncfusion.Xamarin.Buttons >= 19.1.0.55",
-      "Syncfusion.Xamarin.Cards >= 19.1.0.55",
-      "Syncfusion.Xamarin.Core >= 19.1.0.55",
-      "Syncfusion.Xamarin.DataSource >= 19.1.0.55",
-      "Syncfusion.Xamarin.SfBadgeView >= 19.1.0.55",
-      "Syncfusion.Xamarin.SfComboBox >= 19.1.0.55",
-      "Syncfusion.Xamarin.SfListView >= 19.1.0.55",
-      "Syncfusion.Xamarin.SfRating >= 19.1.0.55",
-      "Syncfusion.Xamarin.SfRotator >= 19.1.0.55",
+      "Syncfusion.Xamarin.Buttons >= 19.1.0.63",
+      "Syncfusion.Xamarin.Cards >= 19.1.0.63",
+      "Syncfusion.Xamarin.Core >= 19.1.0.63",
+      "Syncfusion.Xamarin.DataSource >= 19.1.0.63",
+      "Syncfusion.Xamarin.SfBadgeView >= 19.1.0.63",
+      "Syncfusion.Xamarin.SfComboBox >= 19.1.0.63",
+      "Syncfusion.Xamarin.SfListView >= 19.1.0.63",
+      "Syncfusion.Xamarin.SfPicker >= 19.1.0.63",
+      "Syncfusion.Xamarin.SfRating >= 19.1.0.63",
+      "Syncfusion.Xamarin.SfRotator >= 19.1.0.63",
       "Xamarin.Essentials >= 1.6.1",
       "Xamarin.Firebase.iOS.Auth >= 6.9.2",
       "Xamarin.Firebase.iOS.Core >= 6.10.4",
@@ -2806,39 +2913,43 @@
           },
           "Syncfusion.Xamarin.Buttons": {
             "target": "Package",
-            "version": "[19.1.0.55, )"
+            "version": "[19.1.0.63, )"
           },
           "Syncfusion.Xamarin.Cards": {
             "target": "Package",
-            "version": "[19.1.0.55, )"
+            "version": "[19.1.0.63, )"
           },
           "Syncfusion.Xamarin.Core": {
             "target": "Package",
-            "version": "[19.1.0.55, )"
+            "version": "[19.1.0.63, )"
           },
           "Syncfusion.Xamarin.DataSource": {
             "target": "Package",
-            "version": "[19.1.0.55, )"
+            "version": "[19.1.0.63, )"
           },
           "Syncfusion.Xamarin.SfBadgeView": {
             "target": "Package",
-            "version": "[19.1.0.55, )"
+            "version": "[19.1.0.63, )"
           },
           "Syncfusion.Xamarin.SfComboBox": {
             "target": "Package",
-            "version": "[19.1.0.55, )"
+            "version": "[19.1.0.63, )"
           },
           "Syncfusion.Xamarin.SfListView": {
             "target": "Package",
-            "version": "[19.1.0.55, )"
+            "version": "[19.1.0.63, )"
+          },
+          "Syncfusion.Xamarin.SfPicker": {
+            "target": "Package",
+            "version": "[19.1.0.63, )"
           },
           "Syncfusion.Xamarin.SfRating": {
             "target": "Package",
-            "version": "[19.1.0.55, )"
+            "version": "[19.1.0.63, )"
           },
           "Syncfusion.Xamarin.SfRotator": {
             "target": "Package",
-            "version": "[19.1.0.55, )"
+            "version": "[19.1.0.63, )"
           },
           "Xamarin.Essentials": {
             "target": "Package",

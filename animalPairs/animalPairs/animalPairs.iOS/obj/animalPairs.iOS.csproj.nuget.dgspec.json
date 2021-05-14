@@ -56,39 +56,43 @@
             },
             "Syncfusion.Xamarin.Buttons": {
               "target": "Package",
-              "version": "[19.1.0.55, )"
+              "version": "[19.1.0.63, )"
             },
             "Syncfusion.Xamarin.Cards": {
               "target": "Package",
-              "version": "[19.1.0.55, )"
+              "version": "[19.1.0.63, )"
             },
             "Syncfusion.Xamarin.Core": {
               "target": "Package",
-              "version": "[19.1.0.55, )"
+              "version": "[19.1.0.63, )"
             },
             "Syncfusion.Xamarin.DataSource": {
               "target": "Package",
-              "version": "[19.1.0.55, )"
+              "version": "[19.1.0.63, )"
             },
             "Syncfusion.Xamarin.SfBadgeView": {
               "target": "Package",
-              "version": "[19.1.0.55, )"
+              "version": "[19.1.0.63, )"
             },
             "Syncfusion.Xamarin.SfComboBox": {
               "target": "Package",
-              "version": "[19.1.0.55, )"
+              "version": "[19.1.0.63, )"
             },
             "Syncfusion.Xamarin.SfListView": {
               "target": "Package",
-              "version": "[19.1.0.55, )"
+              "version": "[19.1.0.63, )"
+            },
+            "Syncfusion.Xamarin.SfPicker": {
+              "target": "Package",
+              "version": "[19.1.0.63, )"
             },
             "Syncfusion.Xamarin.SfRating": {
               "target": "Package",
-              "version": "[19.1.0.55, )"
+              "version": "[19.1.0.63, )"
             },
             "Syncfusion.Xamarin.SfRotator": {
               "target": "Package",
-              "version": "[19.1.0.55, )"
+              "version": "[19.1.0.63, )"
             },
             "Xamarin.Essentials": {
               "target": "Package",
@@ -181,39 +185,43 @@
             },
             "Syncfusion.Xamarin.Buttons": {
               "target": "Package",
-              "version": "[19.1.0.55, )"
+              "version": "[19.1.0.63, )"
             },
             "Syncfusion.Xamarin.Cards": {
               "target": "Package",
-              "version": "[19.1.0.55, )"
+              "version": "[19.1.0.63, )"
             },
             "Syncfusion.Xamarin.Core": {
               "target": "Package",
-              "version": "[19.1.0.55, )"
+              "version": "[19.1.0.63, )"
             },
             "Syncfusion.Xamarin.DataSource": {
               "target": "Package",
-              "version": "[19.1.0.55, )"
+              "version": "[19.1.0.63, )"
             },
             "Syncfusion.Xamarin.SfBadgeView": {
               "target": "Package",
-              "version": "[19.1.0.55, )"
+              "version": "[19.1.0.63, )"
             },
             "Syncfusion.Xamarin.SfComboBox": {
               "target": "Package",
-              "version": "[19.1.0.55, )"
+              "version": "[19.1.0.63, )"
             },
             "Syncfusion.Xamarin.SfListView": {
               "target": "Package",
-              "version": "[19.1.0.55, )"
+              "version": "[19.1.0.63, )"
+            },
+            "Syncfusion.Xamarin.SfPicker": {
+              "target": "Package",
+              "version": "[19.1.0.63, )"
             },
             "Syncfusion.Xamarin.SfRating": {
               "target": "Package",
-              "version": "[19.1.0.55, )"
+              "version": "[19.1.0.63, )"
             },
             "Syncfusion.Xamarin.SfRotator": {
               "target": "Package",
-              "version": "[19.1.0.55, )"
+              "version": "[19.1.0.63, )"
             },
             "Xam.Plugins.Forms.ImageCircle": {
               "target": "Package",

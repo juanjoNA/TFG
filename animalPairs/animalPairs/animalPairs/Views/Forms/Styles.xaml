@@ -10,7 +10,9 @@
     xmlns:graphics="clr-namespace:Syncfusion.XForms.Graphics;assembly=Syncfusion.Core.XForms">
 
     <Color x:Key="EntryPlaceholderColor">#A0FFFFFF</Color>
+    <Color x:Key="EntryPlaceholderColorVariant">#A0dc4e41</Color>
     <Color x:Key="BorderBackgroundColor">#20FFFFFF</Color>
+    <Color x:Key="BorderBackgroundColorVariant">#20dc4e41</Color>
     <Color x:Key="GradientStartColor">#012E8B</Color>
     <Color x:Key="GradientEndColor">#3F0041</Color>
     <Color x:Key="GradientStart">#713d74</Color>
@@ -44,11 +46,29 @@
         <Setter Property="LineHeight" Value="1.25" />
     </Style>
 
+    <Style x:Key="TitleStyle" TargetType="Label">
+        <Setter Property="TextColor" Value="{DynamicResource Gray-Black}" />
+        <Setter Property="FontSize" Value="24" />
+        <Setter Property="LineHeight" Value="1.25" />
+        <Setter Property="FontAttributes" Value="Bold" />
+    </Style>
+
     <!--  Common style for entries  -->
     <Style x:Key="EntryStyle" TargetType="control:BorderlessEntry">
         <Setter Property="PlaceholderColor" Value="{StaticResource EntryPlaceholderColor}" />
         <Setter Property="BackgroundColor" Value="Transparent" />
         <Setter Property="TextColor" Value="{DynamicResource Gray-White}" />
+        <Setter Property="FontSize" Value="16" />
+        <Setter Property="Margin" Value="15,0" />
+        <Setter Property="HeightRequest" Value="40" />
+        <Setter Property="VerticalOptions" Value="CenterAndExpand" />
+        <Setter Property="ReturnType" Value="Done" />
+    </Style>
+
+    <Style x:Key="EntryStyleVariant" TargetType="control:BorderlessEntry">
+        <Setter Property="PlaceholderColor" Value="{StaticResource PrimaryDarkenColor}" />
+        <Setter Property="BackgroundColor" Value="Transparent" />
+        <Setter Property="TextColor" Value="{DynamicResource PrimaryDarkenColor}" />
         <Setter Property="FontSize" Value="16" />
         <Setter Property="Margin" Value="15,0" />
         <Setter Property="HeightRequest" Value="40" />
@@ -92,6 +112,22 @@
         <Setter Property="BorderColor" Value="Transparent" />
         <Setter Property="CornerRadius" Value="20" />
         <Setter Property="BorderWidth" Value="1" />
+    </Style>
+
+    <Style x:Key="SfBorderStyleVariant" TargetType="border:SfBorder">
+        <Setter Property="BackgroundColor" Value="{StaticResource PrimaryLight}" />
+        <Setter Property="BorderColor" Value="Transparent" />
+        <Setter Property="CornerRadius" Value="20" />
+        <Setter Property="BorderWidth" Value="1" />
+    </Style>
+
+    <Style x:Key="EditorStyle" TargetType="control:BorderlessEditor">
+        <Setter Property="BackgroundColor" Value="{StaticResource PrimaryLight}" />
+        <Setter Property="Margin" Value="15,0" />
+        <Setter Property="HeightRequest" Value="150" />
+        <Setter Property="VerticalOptions" Value="CenterAndExpand" />
+        <Setter Property="MinimumHeightRequest" Value="50" />
+        <Setter Property="FocusedColor" Value="{StaticResource Gray-Black}"
     </Style>
 
     <!--  Common style for gradient view  -->

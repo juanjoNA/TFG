@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="animalPairs.Views.Forms.CreateProfilePage"
+             xmlns:buttons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
+             xmlns:local="clr-namespace:animalPairs.Views.Forms"
+             xmlns:viewModel="clr-namespace:animalPairs.ViewModels.Forms"
+             xmlns:core="clr-namespace:Syncfusion.XForms.Core;assembly=Syncfusion.Core.XForms"
+             Title="Crear perfil"
+             NavigationPage.HasNavigationBar="False"
+             Shell.NavBarIsVisible="False">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Styles.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <!--  Binding context for createProfile page  -->
+    <ContentPage.BindingContext>
+        <viewModel:CreateProfileViewModel />
+    </ContentPage.BindingContext>
+
+    <ContentPage.Content>
+        <Grid>
+            <ScrollView HorizontalOptions="Center">
+                <ScrollView.VerticalOptions>
+                    <OnIdiom
+                        x:TypeArguments="LayoutOptions"
+                        Default="CenterAndExpand"
+                        Phone="FillAndExpand" />
+                </ScrollView.VerticalOptions>
+
+                <StackLayout
+                    Margin="{core:OnPlatformOrientationThickness PhonePortrait='40,32',
+                                                                 PhoneLandscape='150,32',
+                                                                 TabletPortrait='200,50',
+                                                                 TabletLandscape='300,50',
+                                                                 Desktop='30'}"
+                    Spacing="0"
+                    VerticalOptions="FillAndExpand"
+                    WidthRequest="{OnPlatform Default='-1',
+                                              UWP='350'}">
+                    <Grid RowSpacing="0" VerticalOptions="CenterAndExpand">
+
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+                        <StackLayout
+                            HorizontalOptions="Center"
+                            Spacing="24"
+                            VerticalOptions="CenterAndExpand">
+
+                            <!--  Label to display the title of this page  -->
+                            <Label
+                                FontFamily="{StaticResource Montserrat-SemiBold}"
+                                FontSize="20"
+                                HorizontalOptions="Center"
+                                Style="{StaticResource TitleStyle}"
+                                Text="Crear Perfil" />
+
+                            <!--  Entry to get email ID from user  -->
+                            <local:ProfileEntry Grid.Row="1" Padding="0,24"/>
+
+                            <!--  Label to display the title of Animal profile section page  -->
+                            <Label
+                                FontFamily="{StaticResource Montserrat-SemiBold}"
+                                FontSize="20"
+                                HorizontalOptions="Center"
+                                Style="{StaticResource TitleStyle}"
+                                Text="Crear Perfil Mascota" />
+
+                            <!--  Entry to get password from user  -->
+                            <local:AnimalProfileEntry Grid.Row="5" Padding="0,5"/>
+
+                            <!--  Sign-up button  -->
+                            <buttons:SfButton
+                                Command="{Binding SignUpCommand}"
+                                CornerRadius="20"
+                                FontFamily="{StaticResource Montserrat-SemiBold}"
+                                Style="{StaticResource SfButtonStyle}"
+                                Text="Continuar" />
+                        </StackLayout>
+                    </Grid>
+                </StackLayout>
+            </ScrollView>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

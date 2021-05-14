@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:control="clr-namespace:animalPairs.Controls"
+             xmlns:border="clr-namespace:Syncfusion.XForms.Border;assembly=Syncfusion.Core.XForms"
+             xmlns:picker="clr-namespace:Syncfusion.SfPicker.XForms;assembly=Syncfusion.SfPicker.XForms"
+             xmlns:converter="clr-namespace:animalPairs.Converters"
+             xmlns:textArea="clr-namespace:Syncfusion.XForms.TextInputLayout;assembly=Syncfusion.Core.XForms"
+             x:Class="animalPairs.Views.Forms.AnimalProfileEntry">
+    
+    <ContentView.Resources>
+        <ResourceDictionary>
+            <converter:BooleanToColorConverter x:Key="ColorConverter" />
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Styles.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </ContentView.Resources>
+
+    <ContentView.Content>
+        <StackLayout>
+            <!-- Animal Name Entry -->
+            <border:SfBorder BorderColor="{StaticResource PrimaryDarkenColor}" 
+                             Style="{StaticResource SfBorderStyleVariant}">
+
+                <control:BorderlessEntry
+                        x:Name="AnimalName"
+                        Placeholder="Nombre de la mascota" Keyboard="Text"
+                        Style="{StaticResource EntryStyleVariant}"
+                        Text="{Binding AnimalName}" />
+
+            </border:SfBorder>
+
+            <!-- Label Age + Number stepper-->
+            <StackLayout HorizontalOptions="Center"
+                        Orientation="Horizontal"
+                        Spacing="1"
+                        VerticalOptions="Center">
+                <Label
+                x:Name="AnimalAge"
+                Margin="15,-5,0,0"
+                FontSize="16"
+                Text="Edad"
+                TextColor="{DynamicResource Gray-Black}"
+                VerticalOptions="FillAndExpand" />
+
+                <border:SfBorder BorderColor="{StaticResource PrimaryDarkenColor}" 
+                             Style="{StaticResource SfBorderStyleVariant}">
+
+                    <control:BorderlessEntry
+                        x:Name="Age"
+                        Keyboard="Numeric"
+                        Style="{StaticResource EntryStyleVariant}"
+                        Text="{Binding Age}" />
+                </border:SfBorder>
+            </StackLayout>
+            
+
+            <!-- Label Type + Animal type comboBox-->
+            <StackLayout HorizontalOptions="FillAndExpand"
+                        Orientation="Horizontal"
+                        Spacing="1"
+                        VerticalOptions="CenterAndExpand">
+                <Label
+                x:Name="AnimalType"
+                Margin="0,0,60,0"
+                FontSize="16"
+                Text="Tipo mascota"
+                TextColor="{DynamicResource Gray-Black}"
+                VerticalOptions="FillAndExpand" />
+
+
+                <Picker x:Name="AnimalTypePicker" SelectedIndex="{Binding animalType}" HorizontalOptions="FillAndExpand">
+                    <Picker.Items>
+                        <x:String>perro</x:String>
+                        <x:String>gato</x:String>
+                        <x:String>caballo</x:String>
+                        <x:String>pajaro</x:String>
+                    </Picker.Items>
+                </Picker>
+            </StackLayout>
+
+            <!-- TextArea description -->
+            <border:SfBorder BorderColor="{StaticResource PrimaryDarkenColor}" 
+                             Style="{StaticResource SfBorderStyleVariant}">
+                
+                <control:BorderlessEditor 
+                    x:Name="Description" 
+                    Keyboard="Text" 
+                    Style="{StaticResource EditorStyle}"
+                    Text="{Binding Description}"
+                    MaxLength="100"
+                    AutoSize="TextChanges"
+                    Placeholder="Descripción"></control:BorderlessEditor>
+                
+            </border:SfBorder>
+
+            <border:SfBorder BorderColor="{StaticResource PrimaryDarkenColor}" 
+                             Style="{StaticResource SfBorderStyleVariant}">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+
+                    <textArea:SfTextInputLayout EnablePasswordVisibilityToggle="true">
+                        <control:BorderlessEntry
+                        x:Name="Password"
+                        Keyboard="Text"
+                        Style="{StaticResource }"
+                        Text="{Binding Password}" />
+                    </textArea:SfTextInputLayout>
+                </Grid>
+            </border:SfBorder>
+            <!-- Grid photos -->
+        </StackLayout>
+    </ContentView.Content>
+</ContentView>

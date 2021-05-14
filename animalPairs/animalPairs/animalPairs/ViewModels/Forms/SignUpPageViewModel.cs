@@ -93,29 +93,24 @@ namespace animalPairs.ViewModels.Forms
         /// <param name="obj">The Object</param>
         private async void SignUpClickedAsync(object obj)
         {
-            var authService = DependencyService.Resolve<IAuthenticationService>();
-            if(validatePassword(Password, ConfirmPassword))
-            {
-                if(await authService.CreateUser(Email, Password))
-                {
-                    await Shell.Current.GoToAsync(nameof(ChatMessagePage));
-                }
-                else
-                {
-                    Console.WriteLine("Something was grong");
-                }
-            }
-            else
-            {
-                Console.WriteLine("Password is not correct");
-            }
-        }
+            //var authservice = dependencyservice.resolve<iauthenticationservice>();
+            //if (utils.utils.isvalidpassword(password))
+            //{
+            //    if (await authservice.createuser(email, password))
+            //    {
 
-        private bool validatePassword(string password, string confirmPassword)
-        {
-            bool result = true;
-
-            return result;
+            //        await shell.current.gotoasync(nameof(createprofilepage));
+            //    }
+            //    else
+            //    {
+            //        console.writeline("something was grong");
+            //    }
+            //}
+            //else
+            //{
+            //    console.writeline("password is not correct");
+            //}
+            await Shell.Current.GoToAsync(nameof(CreateProfilePage));
         }
         #endregion
     }

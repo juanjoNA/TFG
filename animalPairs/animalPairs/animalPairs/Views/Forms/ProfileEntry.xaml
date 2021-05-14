@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:border="clr-namespace:Syncfusion.XForms.Border;assembly=Syncfusion.Core.XForms"
+             xmlns:control="clr-namespace:animalPairs.Controls"
+             xmlns:converter="clr-namespace:animalPairs.Converters"
+             x:Class="animalPairs.Views.Forms.ProfileEntry">
+
+    <ContentView.Resources>
+        <ResourceDictionary>
+            <converter:BooleanToColorConverter x:Key="ColorConverter" />
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Styles.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </ContentView.Resources>
+
+    <ContentView.Content>
+        <StackLayout>
+            <border:SfBorder BorderColor="{Binding Source={x:Reference UserName}, Path=IsFocused, Converter={StaticResource ColorConverter}, ConverterParameter=0}" 
+                Style="{StaticResource SfBorderStyle}">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+
+                    <control:BorderlessEntry
+                        x:Name="UserName"
+                        Placeholder="Name" Keyboard="Text"
+                        Style="{StaticResource EntryStyleVariant}"
+                        Text="{Binding userName}" />
+                </Grid>
+            </border:SfBorder>
+        </StackLayout>
+    </ContentView.Content>
+</ContentView>

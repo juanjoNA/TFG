@@ -47,3 +47,6 @@ C:\Users\Juanjo\Desktop\Carpetas\universidad\TFG\aplicacion\animalPairs\animalPa
 C:\Users\Juanjo\Desktop\Carpetas\universidad\TFG\aplicacion\animalPairs\animalPairs\animalPairs\obj\Debug\netstandard2.0\ref\animalPairs.dll
 C:\Users\Juanjo\Desktop\Carpetas\universidad\TFG\aplicacion\animalPairs\animalPairs\animalPairs\obj\Debug\netstandard2.0\animalPairs.pdb
 C:\Users\Juanjo\Desktop\Carpetas\universidad\TFG\aplicacion\animalPairs\animalPairs\animalPairs\obj\Debug\netstandard2.0\animalPairs.csprojAssemblyReference.cache
+C:\Users\Juanjo\Desktop\Carpetas\universidad\TFG\aplicacion\animalPairs\animalPairs\animalPairs\obj\Debug\netstandard2.0\Views\Forms\CreateProfilePage.xaml.g.cs
+C:\Users\Juanjo\Desktop\Carpetas\universidad\TFG\aplicacion\animalPairs\animalPairs\animalPairs\obj\Debug\netstandard2.0\Views\Forms\AnimalProfileEntry.xaml.g.cs
+C:\Users\Juanjo\Desktop\Carpetas\universidad\TFG\aplicacion\animalPairs\animalPairs\animalPairs\obj\Debug\netstandard2.0\Views\Forms\ProfileEntry.xaml.g.cs

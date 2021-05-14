@@ -28,7 +28,7 @@ namespace animalPairs.ViewModels.Forms
         public LoginPageViewModel()
         {
             this.LoginCommand = new Command(this.LoginClicked);
-            this.SignUpCommand = new Command(this.SignUpClicked);
+            this.SignUpCommand = new Command(this.SignUpClickedAsync);
             this.ForgotPasswordCommand = new Command(this.ForgotPasswordClicked);
             this.SocialMediaLoginCommand = new Command(this.SocialLoggedIn);
         }
@@ -101,9 +101,9 @@ namespace animalPairs.ViewModels.Forms
         /// Invoked when the Sign Up button is clicked.
         /// </summary>
         /// <param name="obj">The Object</param>
-        private void SignUpClicked(object obj)
+        private async void SignUpClickedAsync(object obj)
         {
-            Application.Current.MainPage = new NavigationPage(new SignUpPage());
+            await Shell.Current.GoToAsync(nameof(SignUpPage));
         }
 
         /// <summary>

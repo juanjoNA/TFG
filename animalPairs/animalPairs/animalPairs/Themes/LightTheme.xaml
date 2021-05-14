@@ -9,7 +9,7 @@
     <Color x:Key="PrimaryDarkenColor">#261421</Color>
     <Color x:Key="PrimaryLighterColor">#FFAFA5</Color>
     <Color x:Key="PrimaryGradient">#6E1616</Color>
-    <Color x:Key="PrimaryLight">#f2b0a5</Color>
+    <Color x:Key="PrimaryLight">#D34A4A</Color>
     <Color x:Key="SecondaryGradient">#261421</Color>
     <Color x:Key="Secondary">#d57056</Color>
     <Color x:Key="Green">#7ed321</Color>

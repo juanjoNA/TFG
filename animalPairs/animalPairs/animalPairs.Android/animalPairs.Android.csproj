@@ -68,34 +68,37 @@
       <Version>2.80.2</Version>
     </PackageReference>
     <PackageReference Include="Syncfusion.Xamarin.Buttons">
-      <Version>19.1.0.59</Version>
+      <Version>19.1.0.63</Version>
     </PackageReference>
     <PackageReference Include="Syncfusion.Xamarin.Cards">
-      <Version>19.1.0.59</Version>
+      <Version>19.1.0.63</Version>
     </PackageReference>
     <PackageReference Include="Syncfusion.Xamarin.Core">
-      <Version>19.1.0.59</Version>
+      <Version>19.1.0.63</Version>
     </PackageReference>
     <PackageReference Include="Syncfusion.Xamarin.DataSource">
-      <Version>19.1.0.59</Version>
+      <Version>19.1.0.63</Version>
     </PackageReference>
     <PackageReference Include="Syncfusion.Xamarin.SfBadgeView">
-      <Version>19.1.0.59</Version>
+      <Version>19.1.0.63</Version>
     </PackageReference>
     <PackageReference Include="Syncfusion.Xamarin.SfComboBox">
-      <Version>19.1.0.59</Version>
+      <Version>19.1.0.63</Version>
     </PackageReference>
     <PackageReference Include="Syncfusion.Xamarin.SfListView">
-      <Version>19.1.0.59</Version>
+      <Version>19.1.0.63</Version>
+    </PackageReference>
+    <PackageReference Include="Syncfusion.Xamarin.SfPicker">
+      <Version>19.1.0.63</Version>
     </PackageReference>
     <PackageReference Include="Syncfusion.Xamarin.SfRating">
-      <Version>19.1.0.59</Version>
+      <Version>19.1.0.63</Version>
     </PackageReference>
     <PackageReference Include="Syncfusion.Xamarin.SfRotator">
-      <Version>19.1.0.59</Version>
+      <Version>19.1.0.63</Version>
     </PackageReference>
     <PackageReference Include="Xamarin.Firebase.Auth">
-      <Version>120.0.2</Version>
+      <Version>120.0.3</Version>
     </PackageReference>
     <PackageReference Include="Xamarin.Firebase.Core">
       <Version>118.0.2</Version>

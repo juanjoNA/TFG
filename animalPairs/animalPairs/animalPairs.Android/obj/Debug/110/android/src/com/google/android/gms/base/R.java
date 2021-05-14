@@ -13,7 +13,7 @@ public final class R {
 		public static final int colorScheme = 0x7f0300b2;
 		public static final int imageAspectRatio = 0x7f03014e;
 		public static final int imageAspectRatioAdjust = 0x7f03014f;
-		public static final int scopeUris = 0x7f0301fa;
+		public static final int scopeUris = 0x7f030214;
 	}
 	public static final class color {
 		public static final int common_google_signin_btn_text_dark = 0x7f050035;
@@ -52,15 +52,15 @@ public final class R {
 		public static final int googleg_standard_color_18 = 0x7f0700a1;
 	}
 	public static final class id {
-		public static final int adjust_height = 0x7f08004e;
-		public static final int adjust_width = 0x7f08004f;
-		public static final int auto = 0x7f080054;
-		public static final int dark = 0x7f08007a;
-		public static final int icon_only = 0x7f0800a4;
-		public static final int light = 0x7f0800af;
-		public static final int none = 0x7f0800dd;
-		public static final int standard = 0x7f08011b;
-		public static final int wide = 0x7f080152;
+		public static final int adjust_height = 0x7f08004f;
+		public static final int adjust_width = 0x7f080050;
+		public static final int auto = 0x7f080055;
+		public static final int dark = 0x7f08007b;
+		public static final int icon_only = 0x7f0800a5;
+		public static final int light = 0x7f0800b0;
+		public static final int none = 0x7f0800de;
+		public static final int standard = 0x7f08011d;
+		public static final int wide = 0x7f080156;
 	}
 	public static final class string {
 		public static final int common_google_play_services_enable_button = 0x7f0e0025;
@@ -86,7 +86,7 @@ public final class R {
 		public static final int LoadingImageView_circleCrop = 0;
 		public static final int LoadingImageView_imageAspectRatio = 1;
 		public static final int LoadingImageView_imageAspectRatioAdjust = 2;
-		public static final int[] SignInButton = new int[] { 0x7f030068, 0x7f0300b2, 0x7f0301fa };
+		public static final int[] SignInButton = new int[] { 0x7f030068, 0x7f0300b2, 0x7f030214 };
 		public static final int SignInButton_buttonSize = 0;
 		public static final int SignInButton_colorScheme = 1;
 		public static final int SignInButton_scopeUris = 2;

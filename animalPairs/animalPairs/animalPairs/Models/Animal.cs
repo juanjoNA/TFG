@@ -27,7 +27,7 @@ namespace animalPairs.Models
         public string Name { get; set; }
 
         /// Gets or sets the animal author name.
-        public AnimalTypes Type { get; set; }
+        public string Type { get; set; }
 
         /// Gets or sets the animal description
         public string Description { get; set; }
