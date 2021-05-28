@@ -13,7 +13,12 @@ namespace animalPairs.ViewModels.Forms
     {
 
         #region Fields
-        private string ;
+        private string name;
+        private int age;
+        private string raza;
+        private string description;
+        private string type;
+        private string gender;
 
         #endregion
 
