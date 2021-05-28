@@ -1,6 +1,9 @@
 ﻿using animalPairs.Common;
+using animalPairs.Models;
+using animalPairs.Utils;
 using animalPairs.Views.Chat;
 using animalPairs.Views.Forms;
+using animalPairs.Views.Navigation;
 using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Internals;
@@ -16,10 +19,7 @@ namespace animalPairs.ViewModels.Forms
         #region Fields
 
         private string name;
-
-        private string password;
-
-        private string confirmPassword;
+        private string surname;
 
         #endregion
 
@@ -38,24 +38,40 @@ namespace animalPairs.ViewModels.Forms
 
         #region Property
 
-        /// <summary>
-        /// Gets or sets the property that bounds with an entry that gets the name from user in the Sign Up page.
-        /// </summary>
-        public string ConfirmPassword
+        public string Name
         {
             get
             {
-                return this.confirmPassword;
+                return this.name;
             }
 
             set
             {
-                if (this.confirmPassword == value)
+                if (this.name == value)
                 {
                     return;
                 }
 
-                this.confirmPassword = value;
+                this.name = value;
+                this.NotifyPropertyChanged();
+            }
+        }
+
+        public string Surname
+        {
+            get
+            {
+                return this.surname;
+            }
+
+            set
+            {
+                if (this.surname == value)
+                {
+                    return;
+                }
+
+                this.surname = value;
                 this.NotifyPropertyChanged();
             }
         }
@@ -93,24 +109,42 @@ namespace animalPairs.ViewModels.Forms
         /// <param name="obj">The Object</param>
         private async void SignUpClickedAsync(object obj)
         {
-            //var authservice = dependencyservice.resolve<iauthenticationservice>();
-            //if (utils.utils.isvalidpassword(password))
-            //{
-            //    if (await authservice.createuser(email, password))
-            //    {
+            var authservice = DependencyService.Resolve<IAuthenticationService>();
+            var firestoreDB = DependencyService.Resolve<IFirebaseDBService>();
+            UserProfile user;
 
-            //        await shell.current.gotoasync(nameof(createprofilepage));
-            //    }
-            //    else
-            //    {
-            //        console.writeline("something was grong");
-            //    }
-            //}
-            //else
-            //{
-            //    console.writeline("password is not correct");
-            //}
-            await Shell.Current.GoToAsync(nameof(CreateProfilePage));
+            if(Name.Equals(null) || Surname.Equals(null) || Email.Equals(null) || Password.Equals(null))
+            {
+                await App.Current.MainPage.DisplayAlert("Error", "Introduce todos los campos", "OK");
+            }
+            else
+            {
+                if (!Utils.Utils.isValidPassword(Password))
+                {
+                    await App.Current.MainPage.DisplayAlert("Error", "introduce una contraseña válida", "OK");
+                    return;
+                }
+                if (!Utils.Utils.isValidEmail(Email))
+                {
+                    await App.Current.MainPage.DisplayAlert("Error", "Introduce un email válido", "OK");
+                    return;
+                }
+
+                var result = await authservice.CreateUser(Email, Password);
+                if (result)
+                {
+                    user = new UserProfile(authservice.GetUserId(), Name, Surname, Email);
+                    firestoreDB.SetProfile(user);
+                    Application.Current.MainPage = new NavigationPage(new CreateProfilePage());
+                }
+                else
+                {
+                    await App.Current.MainPage.DisplayAlert("Error", "Ha ocurrido un problema, intentalo más tarde", "OK");
+                }
+                
+            }
+            
+            
         }
         #endregion
     }

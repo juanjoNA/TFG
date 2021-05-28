@@ -1,5 +1,13 @@
 C:\Users\Juanjo\Desktop\Carpetas\universidad\TFG\aplicacion\animalPairs\animalPairs\animalPairs.iOS\bin\iPhone\Debug\animalPairs.iOS.exe
 C:\Users\Juanjo\Desktop\Carpetas\universidad\TFG\aplicacion\animalPairs\animalPairs\animalPairs.iOS\bin\iPhone\Debug\animalPairs.iOS.pdb
+C:\Users\Juanjo\Desktop\Carpetas\universidad\TFG\aplicacion\animalPairs\animalPairs\animalPairs.iOS\bin\iPhone\Debug\Google.Apis.dll
+C:\Users\Juanjo\Desktop\Carpetas\universidad\TFG\aplicacion\animalPairs\animalPairs\animalPairs.iOS\bin\iPhone\Debug\Google.Apis.pdb
+C:\Users\Juanjo\Desktop\Carpetas\universidad\TFG\aplicacion\animalPairs\animalPairs\animalPairs.iOS\bin\iPhone\Debug\Google.Apis.Auth.PlatformServices.dll
+C:\Users\Juanjo\Desktop\Carpetas\universidad\TFG\aplicacion\animalPairs\animalPairs\animalPairs.iOS\bin\iPhone\Debug\Google.Apis.Auth.dll
+C:\Users\Juanjo\Desktop\Carpetas\universidad\TFG\aplicacion\animalPairs\animalPairs\animalPairs.iOS\bin\iPhone\Debug\Google.Apis.Auth.pdb
+C:\Users\Juanjo\Desktop\Carpetas\universidad\TFG\aplicacion\animalPairs\animalPairs\animalPairs.iOS\bin\iPhone\Debug\Google.Apis.Core.dll
+C:\Users\Juanjo\Desktop\Carpetas\universidad\TFG\aplicacion\animalPairs\animalPairs\animalPairs.iOS\bin\iPhone\Debug\Google.Apis.Core.pdb
+C:\Users\Juanjo\Desktop\Carpetas\universidad\TFG\aplicacion\animalPairs\animalPairs\animalPairs.iOS\bin\iPhone\Debug\Newtonsoft.Json.dll
 C:\Users\Juanjo\Desktop\Carpetas\universidad\TFG\aplicacion\animalPairs\animalPairs\animalPairs.iOS\bin\iPhone\Debug\SkiaSharp.dll
 C:\Users\Juanjo\Desktop\Carpetas\universidad\TFG\aplicacion\animalPairs\animalPairs\animalPairs.iOS\bin\iPhone\Debug\SkiaSharp.Extended.dll
 C:\Users\Juanjo\Desktop\Carpetas\universidad\TFG\aplicacion\animalPairs\animalPairs\animalPairs.iOS\bin\iPhone\Debug\SkiaSharp.Extended.Svg.dll
@@ -20,6 +28,9 @@ C:\Users\Juanjo\Desktop\Carpetas\universidad\TFG\aplicacion\animalPairs\animalPa
 C:\Users\Juanjo\Desktop\Carpetas\universidad\TFG\aplicacion\animalPairs\animalPairs\animalPairs.iOS\bin\iPhone\Debug\Syncfusion.SfComboBox.XForms.iOS.dll
 C:\Users\Juanjo\Desktop\Carpetas\universidad\TFG\aplicacion\animalPairs\animalPairs\animalPairs.iOS\bin\iPhone\Debug\Syncfusion.SfListView.XForms.dll
 C:\Users\Juanjo\Desktop\Carpetas\universidad\TFG\aplicacion\animalPairs\animalPairs\animalPairs.iOS\bin\iPhone\Debug\Syncfusion.SfListView.XForms.iOS.dll
+C:\Users\Juanjo\Desktop\Carpetas\universidad\TFG\aplicacion\animalPairs\animalPairs\animalPairs.iOS\bin\iPhone\Debug\Syncfusion.SfPicker.XForms.dll
+C:\Users\Juanjo\Desktop\Carpetas\universidad\TFG\aplicacion\animalPairs\animalPairs\animalPairs.iOS\bin\iPhone\Debug\Syncfusion.SfPicker.XForms.iOS.dll
+C:\Users\Juanjo\Desktop\Carpetas\universidad\TFG\aplicacion\animalPairs\animalPairs\animalPairs.iOS\bin\iPhone\Debug\Syncfusion.SfPicker.iOS.dll
 C:\Users\Juanjo\Desktop\Carpetas\universidad\TFG\aplicacion\animalPairs\animalPairs\animalPairs.iOS\bin\iPhone\Debug\Syncfusion.SfRating.XForms.dll
 C:\Users\Juanjo\Desktop\Carpetas\universidad\TFG\aplicacion\animalPairs\animalPairs\animalPairs.iOS\bin\iPhone\Debug\Syncfusion.SfRating.XForms.iOS.dll
 C:\Users\Juanjo\Desktop\Carpetas\universidad\TFG\aplicacion\animalPairs\animalPairs\animalPairs.iOS\bin\iPhone\Debug\Syncfusion.SfRating.iOS.dll
@@ -31,6 +42,7 @@ C:\Users\Juanjo\Desktop\Carpetas\universidad\TFG\aplicacion\animalPairs\animalPa
 C:\Users\Juanjo\Desktop\Carpetas\universidad\TFG\aplicacion\animalPairs\animalPairs\animalPairs.iOS\bin\iPhone\Debug\Xamarin.Essentials.pdb
 C:\Users\Juanjo\Desktop\Carpetas\universidad\TFG\aplicacion\animalPairs\animalPairs\animalPairs.iOS\bin\iPhone\Debug\Firebase.Auth.dll
 C:\Users\Juanjo\Desktop\Carpetas\universidad\TFG\aplicacion\animalPairs\animalPairs\animalPairs.iOS\bin\iPhone\Debug\Firebase.Core.dll
+C:\Users\Juanjo\Desktop\Carpetas\universidad\TFG\aplicacion\animalPairs\animalPairs\animalPairs.iOS\bin\iPhone\Debug\Firebase.Database.dll
 C:\Users\Juanjo\Desktop\Carpetas\universidad\TFG\aplicacion\animalPairs\animalPairs\animalPairs.iOS\bin\iPhone\Debug\Xamarin.Forms.Core.dll
 C:\Users\Juanjo\Desktop\Carpetas\universidad\TFG\aplicacion\animalPairs\animalPairs\animalPairs.iOS\bin\iPhone\Debug\Xamarin.Forms.Core.pdb
 C:\Users\Juanjo\Desktop\Carpetas\universidad\TFG\aplicacion\animalPairs\animalPairs\animalPairs.iOS\bin\iPhone\Debug\Xamarin.Forms.Platform.dll

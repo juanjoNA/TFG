@@ -1,4 +1,5 @@
-﻿using animalPairs.Views.Catalog;
+﻿using animalPairs.Common;
+using animalPairs.Views.Catalog;
 using animalPairs.Views.Chat;
 using animalPairs.Views.Forms;
 using animalPairs.Views.Navigation;
@@ -91,10 +92,25 @@ namespace animalPairs.ViewModels.Forms
         /// Invoked when the Log In button is clicked.
         /// </summary>
         /// <param name="obj">The Object</param>
-        private void LoginClicked(object obj)
+        private async void LoginClicked(object obj)
         {
             // Do something
-            Application.Current.MainPage = new NavigationPage(new BottomNavigationPage());
+            var authservice = DependencyService.Resolve<IAuthenticationService>();
+            if(Email is null || Password is null)
+            {
+                await App.Current.MainPage.DisplayAlert("Error", "Introduce un email y una contraseña válidos", "OK");
+            }
+            else 
+            {
+                if (await authservice.LoginWithEmailAndPassword(Email, Password) != string.Empty)
+                {
+                    Application.Current.MainPage = new NavigationPage(new BottomNavigationPage());
+                }
+                else
+                {
+                    await App.Current.MainPage.DisplayAlert("Error", "El email y la contraseña introducidos no son correctos.", "OK");
+                }
+            }
         }
 
         /// <summary>
@@ -103,7 +119,7 @@ namespace animalPairs.ViewModels.Forms
         /// <param name="obj">The Object</param>
         private async void SignUpClickedAsync(object obj)
         {
-            await Shell.Current.GoToAsync(nameof(SignUpPage));
+            Application.Current.MainPage = new NavigationPage(new SignUpPage());
         }
 
         /// <summary>

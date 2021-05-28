@@ -16,20 +16,25 @@
     </ContentView.Resources>
 
     <ContentView.Content>
-        <StackLayout>
+        <StackLayout Spacing="20">
             <border:SfBorder BorderColor="{Binding Source={x:Reference UserName}, Path=IsFocused, Converter={StaticResource ColorConverter}, ConverterParameter=0}" 
                 Style="{StaticResource SfBorderStyle}">
-                <Grid>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="*" />
-                    </Grid.ColumnDefinitions>
 
-                    <control:BorderlessEntry
+                <control:BorderlessEntry
                         x:Name="UserName"
-                        Placeholder="Name" Keyboard="Text"
-                        Style="{StaticResource EntryStyleVariant}"
-                        Text="{Binding userName}" />
-                </Grid>
+                        Placeholder="Nombre" Keyboard="Text"
+                        Style="{StaticResource EntryStyle}"
+                        Text="{Binding Name}" />
+            </border:SfBorder>
+
+            <border:SfBorder BorderColor="{Binding Source={x:Reference UserSurname}, Path=IsFocused, Converter={StaticResource ColorConverter}, ConverterParameter=0}" 
+                Style="{StaticResource SfBorderStyle}">
+
+                <control:BorderlessEntry
+                        x:Name="UserSurname"
+                        Placeholder="Apellido" Keyboard="Text"
+                        Style="{StaticResource EntryStyle}"
+                        Text="{Binding Surname}" />
             </border:SfBorder>
         </StackLayout>
     </ContentView.Content>

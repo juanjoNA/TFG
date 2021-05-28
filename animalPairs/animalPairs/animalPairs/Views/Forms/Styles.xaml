@@ -7,14 +7,16 @@
     xmlns:buttons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
     xmlns:control="clr-namespace:animalPairs.Controls"
     xmlns:combobox="clr-namespace:Syncfusion.XForms.ComboBox;assembly=Syncfusion.SfComboBox.XForms"
+    xmlns:input="clr-namespace:Syncfusion.XForms.TextInputLayout;assembly=Syncfusion.Core.XForms"
+    xmlns:textArea="clr-namespace:Syncfusion.XForms.TextInputLayout;assembly=Syncfusion.Core.XForms"
     xmlns:graphics="clr-namespace:Syncfusion.XForms.Graphics;assembly=Syncfusion.Core.XForms">
 
     <Color x:Key="EntryPlaceholderColor">#A0FFFFFF</Color>
     <Color x:Key="EntryPlaceholderColorVariant">#A0dc4e41</Color>
     <Color x:Key="BorderBackgroundColor">#20FFFFFF</Color>
     <Color x:Key="BorderBackgroundColorVariant">#20dc4e41</Color>
-    <Color x:Key="GradientStartColor">#012E8B</Color>
-    <Color x:Key="GradientEndColor">#3F0041</Color>
+    <Color x:Key="GradientStartColor">#FFAFA5</Color>
+    <Color x:Key="GradientEndColor">#751a2c</Color>
     <Color x:Key="GradientStart">#713d74</Color>
     <Color x:Key="GradientEnd">#221e60</Color>
     <Color x:Key="TwitterBlue">#55acee</Color>
@@ -47,8 +49,8 @@
     </Style>
 
     <Style x:Key="TitleStyle" TargetType="Label">
-        <Setter Property="TextColor" Value="{DynamicResource Gray-Black}" />
-        <Setter Property="FontSize" Value="24" />
+        <Setter Property="TextColor" Value="{DynamicResource Gray-White}" />
+        <Setter Property="FontSize" Value="32" />
         <Setter Property="LineHeight" Value="1.25" />
         <Setter Property="FontAttributes" Value="Bold" />
     </Style>
@@ -65,17 +67,31 @@
         <Setter Property="ReturnType" Value="Done" />
     </Style>
 
-    <Style x:Key="EntryStyleVariant" TargetType="control:BorderlessEntry">
-        <Setter Property="PlaceholderColor" Value="{StaticResource PrimaryDarkenColor}" />
-        <Setter Property="BackgroundColor" Value="Transparent" />
-        <Setter Property="TextColor" Value="{DynamicResource PrimaryDarkenColor}" />
+    <Style x:Key="PasswordStyle" TargetType="control:BorderlessEntry">
+        <Setter Property="TextColor" Value="{DynamicResource Gray-White}" />
         <Setter Property="FontSize" Value="16" />
+    </Style>
+
+    <Style x:Key="EntryInputStyleVariant" TargetType="input:SfTextInputLayout">
+        <Setter Property="BackgroundColor" Value="Transparent" />
         <Setter Property="Margin" Value="15,0" />
         <Setter Property="HeightRequest" Value="40" />
         <Setter Property="VerticalOptions" Value="CenterAndExpand" />
-        <Setter Property="ReturnType" Value="Done" />
     </Style>
 
+    <Style x:Key="PickerStyle" TargetType="Picker">
+        <Setter Property="TextColor" Value="{DynamicResource Gray-White}" />
+        <Setter Property="TitleColor" Value="{StaticResource Gray-Black}" />
+    </Style>
+
+    <Style x:Key="EditorStyle" TargetType="control:BorderlessEditor">
+        <Setter Property="PlaceholderColor" Value="{StaticResource EntryPlaceholderColor}" />
+        <Setter Property="BackgroundColor" Value="{StaticResource BorderBackgroundColor}" />
+        <Setter Property="HeightRequest" Value="100" />
+        <Setter Property="VerticalOptions" Value="CenterAndExpand" />
+        <Setter Property="TextColor" Value="{StaticResource Gray-White}" />
+        <Setter Property="MinimumHeightRequest" Value="50" />
+    </Style>
     <!--  Common style for buttons  -->
     <Style x:Key="SfButtonStyle" TargetType="buttons:SfButton">
         <Setter Property="BackgroundGradient">
@@ -97,10 +113,14 @@
         <Setter Property="VerticalTextAlignment" Value="Center" />
     </Style>
 
+    <Style x:Key="radioButtonStyle" TargetType="RadioButton">
+        <Setter Property="TextColor" Value="{DynamicResource Gray-White}" />
+    </Style>
+
     <!--  Common style for flat buttons  -->
     <Style x:Key="SfFlatButtonStyle" TargetType="buttons:SfButton">
         <Setter Property="BackgroundColor" Value="Transparent" />
-        <Setter Property="TextColor" Value="{DynamicResource PrimaryColor}" />
+        <Setter Property="TextColor" Value="{DynamicResource Alert}" />
         <Setter Property="FontFamily" Value="{StaticResource Montserrat-SemiBold}" />
         <Setter Property="FontSize" Value="14" />
         <Setter Property="VerticalTextAlignment" Value="Center" />
@@ -114,30 +134,23 @@
         <Setter Property="BorderWidth" Value="1" />
     </Style>
 
-    <Style x:Key="SfBorderStyleVariant" TargetType="border:SfBorder">
-        <Setter Property="BackgroundColor" Value="{StaticResource PrimaryLight}" />
-        <Setter Property="BorderColor" Value="Transparent" />
-        <Setter Property="CornerRadius" Value="20" />
-        <Setter Property="BorderWidth" Value="1" />
-    </Style>
-
-    <Style x:Key="EditorStyle" TargetType="control:BorderlessEditor">
-        <Setter Property="BackgroundColor" Value="{StaticResource PrimaryLight}" />
-        <Setter Property="Margin" Value="15,0" />
-        <Setter Property="HeightRequest" Value="150" />
-        <Setter Property="VerticalOptions" Value="CenterAndExpand" />
-        <Setter Property="MinimumHeightRequest" Value="50" />
-        <Setter Property="FocusedColor" Value="{StaticResource Gray-Black}"
+    <Style x:Key="SfPasswordBorderStyle" TargetType="textArea:SfTextInputLayout">
+        <Setter Property="BackgroundColor" Value="{StaticResource BorderBackgroundColor}" />
+        <Setter Property="FocusedStrokeWidth" Value="1" />
+        <Setter Property="UnfocusedStrokeWidth" Value="1" />
+        <Setter Property="FocusedColor" Value="{StaticResource Gray-White}" />
+        <Setter Property="UnfocusedColor" Value="{StaticResource BorderBackgroundColor}" />
+        <Setter Property="OutlineCornerRadius" Value="20" />
     </Style>
 
     <!--  Common style for gradient view  -->
     <Style x:Key="SfGradientViewStyle" TargetType="graphics:SfGradientView">
-        <Setter Property="Opacity" Value="0.82" />
+        <Setter Property="Opacity" Value="1" />
         <Setter Property="VerticalOptions" Value="FillAndExpand" />
         <Setter Property="HorizontalOptions" Value="FillAndExpand" />
         <Setter Property="BackgroundBrush">
             <Setter.Value>
-                <graphics:SfLinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                <graphics:SfLinearGradientBrush StartPoint="0,0" EndPoint="0,1">
                     <graphics:SfLinearGradientBrush.GradientStops>
                         <graphics:SfGradientStop Offset="0.0" Color="{StaticResource GradientEndColor}" />
                         <graphics:SfGradientStop Offset="1.0" Color="{StaticResource GradientStartColor}" />

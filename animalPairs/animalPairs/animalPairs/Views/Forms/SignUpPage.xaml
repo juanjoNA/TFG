@@ -10,12 +10,8 @@
     xmlns:local="clr-namespace:animalPairs.Views.Forms"
     xmlns:viewModel="clr-namespace:animalPairs.ViewModels.Forms"
     Title="Sign Up"
-    BackgroundImageSource="{core:OnPlatformOrientationStringValue Default=LoginBackground.png,
-                                                                  iOSPhoneLandscape=LoginBackground-Landscape.png,
-                                                                  iOSTabletLandscape=LoginBackground-Landscape.png}"
     NavigationPage.HasNavigationBar="False"
-    Shell.NavBarIsVisible="False"
-    Style="{StaticResource ContentPageStyle}">
+    Shell.NavBarIsVisible="False">
 
     <ContentPage.Resources>
         <ResourceDictionary>
@@ -55,7 +51,7 @@
                                               UWP='350'}">
                     <StackLayout
                         HorizontalOptions="Center"
-                        Spacing="24"
+                        Spacing="20"
                         VerticalOptions="CenterAndExpand">
 
                         <!--  Label to display the title of this page  -->
@@ -75,6 +71,9 @@
                             Text="Create an account to start doing more" />
 
                         <!--  Entry to get email ID from user  -->
+                        <local:ProfileEntry />
+                        
+                        <!--  Entry to get email ID from user  -->
                         <local:EmailEntry />
 
                         <!--  Entry to get password from user  -->
@@ -86,7 +85,7 @@
                             CornerRadius="20"
                             FontFamily="{StaticResource Montserrat-SemiBold}"
                             Style="{StaticResource SfButtonStyle}"
-                            Text="REGISTER" />
+                            Text="REGISTRARSE" />
                     </StackLayout>
 
                     <StackLayout

@@ -20,10 +20,16 @@ namespace animalPairs.Views.Forms {
         private global::animalPairs.Controls.BorderlessEntry AnimalName;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
+        private global::animalPairs.Controls.BorderlessEntry AnimaleRace;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private global::Xamarin.Forms.Label AnimalAge;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private global::animalPairs.Controls.BorderlessEntry Age;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
+        private global::Xamarin.Forms.Label Genero;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private global::Xamarin.Forms.Label AnimalType;
@@ -35,18 +41,16 @@ namespace animalPairs.Views.Forms {
         private global::animalPairs.Controls.BorderlessEditor Description;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
-        private global::animalPairs.Controls.BorderlessEntry Password;
-        
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
             global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(AnimalProfileEntry));
             AnimalName = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::animalPairs.Controls.BorderlessEntry>(this, "AnimalName");
+            AnimaleRace = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::animalPairs.Controls.BorderlessEntry>(this, "AnimaleRace");
             AnimalAge = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Label>(this, "AnimalAge");
             Age = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::animalPairs.Controls.BorderlessEntry>(this, "Age");
+            Genero = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Label>(this, "Genero");
             AnimalType = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Label>(this, "AnimalType");
             AnimalTypePicker = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Picker>(this, "AnimalTypePicker");
             Description = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::animalPairs.Controls.BorderlessEditor>(this, "Description");
-            Password = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::animalPairs.Controls.BorderlessEntry>(this, "Password");
         }
     }
 }

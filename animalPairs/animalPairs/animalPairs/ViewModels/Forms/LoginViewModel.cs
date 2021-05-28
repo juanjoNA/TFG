@@ -87,13 +87,9 @@ namespace animalPairs.ViewModels.Forms
 
         public LoginViewModel()
         {
-            SignUpCommand = new Command(OnSignUp);
+
         }
 
-        private async void OnSignUp()
-        {
-            await Shell.Current.GoToAsync(nameof(SignUpPage));
-        }
 
 
         #region Commands

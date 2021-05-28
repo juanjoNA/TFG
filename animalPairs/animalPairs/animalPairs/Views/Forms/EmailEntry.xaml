@@ -44,7 +44,7 @@
                         HorizontalTextAlignment="End"
                         IsVisible="{Binding Path=IsVisible, Source={x:Reference ValidationLabel}}"
                         Text="&#xe707;"
-                        TextColor="{DynamicResource Red}"
+                        TextColor="{DynamicResource Alert}"
                         VerticalOptions="Center" />
 
 
@@ -61,7 +61,7 @@
                                     ConverterParameter={x:Reference Email}
                             }"
                 Text="Introduzca un email válido"
-                TextColor="{DynamicResource Red}"
+                TextColor="{DynamicResource Alert}"
                 VerticalOptions="FillAndExpand" />
 
         </StackLayout>

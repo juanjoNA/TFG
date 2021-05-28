@@ -42,7 +42,7 @@ namespace animalPairs.Converters
                     return Color.FromRgba(255, 255, 255, 0.6);
                 }
 
-                return !Utils.Utils.isValidPassword(passwordEntry.Text) ? Color.FromHex("#FF4A4A") : Color.Transparent;
+                return !Utils.Utils.isValidPassword(passwordEntry.Text) ? Color.FromHex("#C30A0A") : Color.Transparent;
 
             }
 

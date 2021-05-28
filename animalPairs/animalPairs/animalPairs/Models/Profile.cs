@@ -7,25 +7,21 @@ namespace animalPairs.Models
     /// Model for SocialProfile
     /// </summary>
     [Preserve(AllMembers = true)]
-    public class Profile
+    public class UserProfile
     {
         #region Fields
 
-        private string userId;
+        private string id;
         private string email;
         private string name;
         private string surname;
         private string imagePath;
+        private string animalId;
 
         #endregion
 
         #region Properties
 
-        public string UserID
-        {
-            get { return userId; }
-            set { this.userId = value; }
-        }
         public string Email
         {
             get { return email; }
@@ -41,15 +37,39 @@ namespace animalPairs.Models
             get { return surname; }
             set { this.surname = value; }
         }
+        public string AnimalId
+        {
+            get { return animalId; }
+            set { this.animalId = value; }
+        }
 
         public string ImagePath
         {
             get { return App.BaseImageUrl + this.imagePath; }
             set { this.imagePath = value; }
         }
+        public string Id
+        {
+            get { return id; }
+            set { this.id = value; }
+        }
 
         #endregion
 
+        #region Constructors
+        public UserProfile(string id, string name, string surname, string email)
+        {
+            Id = id;
+            Name = name;
+            Surname = surname;
+            Email = email;
+        }
+
+        public UserProfile()
+        {
+
+        }
+        #endregion
         #region Methods
 
         #endregion

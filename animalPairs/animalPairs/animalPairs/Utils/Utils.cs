@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 
 namespace animalPairs.Utils
 {
@@ -14,12 +15,20 @@ namespace animalPairs.Utils
                 return true;
             }
 
-            if (password.Length < 7 || !password.Any(char.IsUpper) || !password.Any(char.IsLower) || password.Contains(" "))
+            if (password.Length >= 6 && password.Any(char.IsUpper) && password.Any(char.IsLower) && password.Any(char.IsNumber))
             {
-                return false;
+                return true;
             }
             
-            return true;
+            return false;
+        }
+
+        public static bool isValidEmail(string email)
+        {
+            var regex = new Regex(@"\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*");
+            return regex.IsMatch(email) && !email.EndsWith(".");
         }
     }
+
+
 }

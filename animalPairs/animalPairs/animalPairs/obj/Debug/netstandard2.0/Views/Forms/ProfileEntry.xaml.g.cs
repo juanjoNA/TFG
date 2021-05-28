@@ -20,9 +20,13 @@ namespace animalPairs.Views.Forms {
         private global::animalPairs.Controls.BorderlessEntry UserName;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
+        private global::animalPairs.Controls.BorderlessEntry UserSurname;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
             global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(ProfileEntry));
             UserName = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::animalPairs.Controls.BorderlessEntry>(this, "UserName");
+            UserSurname = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::animalPairs.Controls.BorderlessEntry>(this, "UserSurname");
         }
     }
 }

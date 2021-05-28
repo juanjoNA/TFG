@@ -5,7 +5,7 @@ using System.Collections.ObjectModel;
 using System.Text;
 using Xamarin.Forms;
 using Xamarin.Forms.Internals;
-using Model = animalPairs.Models.Animal;
+using Model = animalPairs.Models.Mascota;
 
 namespace animalPairs.ViewModels
 {
@@ -49,9 +49,10 @@ namespace animalPairs.ViewModels
                     Name = "Zoe",
                     Age = 5,
                     IsLiked = false,
-                    Gender = Models.Gender.Macho,
+                    Gender = "Macho",
                     Description = "Perro muy sencillo y sociable",
                     Type = "perro",
+                    AnimalRace = "labrador",
                     ImagePath= App.BaseImageUrl + "ArticleParallaxHeaderImage.png",
                     FavouritesCount= 0
                 },
@@ -60,9 +61,10 @@ namespace animalPairs.ViewModels
                     Name = "Bobby",
                     Age = 1,
                     IsLiked = false,
-                    Gender = Models.Gender.Macho,
+                    Gender = "Macho",
                     Description = "Perro pequeño muy cariñoso y bastante inquieto. Es muy obediente.",
                     Type = "perro",
+                    AnimalRace = "labrador",
                     ImagePath= App.BaseImageUrl + "ArticleParallaxHeaderImage.png",
                     FavouritesCount= 0
                 },
@@ -71,9 +73,10 @@ namespace animalPairs.ViewModels
                     Name = "Reina",
                     Age = 12,
                     IsLiked = false,
-                    Gender = Models.Gender.Hembra,
+                    Gender = "Hembra",
                     Description = "Yegua rapida de pura sangre perfecta para poder montar y para competiciones.",
                     Type = "caballo",
+                    AnimalRace = "arabe",
                     ImagePath= App.BaseImageUrl + "ArticleParallaxHeaderImage.png",
                     FavouritesCount= 0
                 },
@@ -82,9 +85,10 @@ namespace animalPairs.ViewModels
                     Name = "Misifu",
                     Age = 8,
                     IsLiked = false,
-                    Gender = Models.Gender.Macho,
+                    Gender = "Macho",
                     Description = "Gato pequines joven. Muy bien cuidado, alimentado y con revisiones de todo recien pasadas.",
                     Type = "gato",
+                    AnimalRace = "persa",
                     ImagePath= App.BaseImageUrl + "ArticleParallaxHeaderImage.png",
                     FavouritesCount= 0
                 },
@@ -93,9 +97,10 @@ namespace animalPairs.ViewModels
                     Name = "Red",
                     Age = 16,
                     IsLiked = false,
-                    Gender = Models.Gender.Hembra,
+                    Gender = "Hembra",
                     Description = "Loro gris de cola roja. Habla mucho y es capaz de imitar cualquier tipo de ruido. Es poco sociable con las mujeres pero muy cariñoso con todos los hombres. Muy inteligente y con un poco de dedicacion puede aprender cualquier cosa.",
                     Type = "pajaro",
+                    AnimalRace = "yaco",
                     ImagePath= App.BaseImageUrl + "ArticleParallaxHeaderImage.png",
                     FavouritesCount= 0
                 },

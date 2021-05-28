@@ -5,12 +5,17 @@ using Android.Content.PM;
 using Android.Runtime;
 using Android.OS;
 using Firebase;
+using Firebase.Database;
+using Firebase.Firestore;
 
 namespace animalPairs.Droid
 {
     [Activity(Label = "animalPairs", Icon = "@mipmap/icon", Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation | ConfigChanges.UiMode | ConfigChanges.ScreenLayout | ConfigChanges.SmallestScreenSize )]
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
     {
+        public static FirebaseApp app;
+        public static FirebaseFirestore database;
+
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -20,10 +25,19 @@ namespace animalPairs.Droid
 
             var options = new FirebaseOptions.Builder()
                         .SetApplicationId("animalpairs-tfg2021")                    
-                        .SetApiKey("AIzaSyAokCy9cuXiqq2RZGEyvKMi29zKP9BwbXM")                    
-                        .SetDatabaseUrl("https://animalpairs-tfg2021-default-rtdb.firebaseio.com/")                    
+                        .SetApiKey("AIzaSyCe1FTe0vmQPTdIpkSVIM4cSR38AulqmcA") 
+                        .SetProjectId("animalpairs-tfg2021")
+                        .SetDatabaseUrl("https://animalpairs-tfg2021-default-rtdb.firebaseio.com/") 
+                        .SetStorageBucket("animalpairs-tfg2021.appspot.com")
                         .Build();
-            //if (app == null) app = FirebaseApp.InitializeApp(this, options, "animalPairs");
+            if (app == null) {
+                app = FirebaseApp.InitializeApp(this, options, "animalPairs");
+                database = FirebaseFirestore.GetInstance(app);
+            }
+            else
+            {
+                database = FirebaseFirestore.GetInstance(app);
+            }
             LoadApplication(new App());
 
             FirebaseApp.InitializeApp(Application.Context);

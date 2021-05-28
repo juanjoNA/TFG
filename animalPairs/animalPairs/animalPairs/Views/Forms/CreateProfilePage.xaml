@@ -6,6 +6,7 @@
              xmlns:local="clr-namespace:animalPairs.Views.Forms"
              xmlns:viewModel="clr-namespace:animalPairs.ViewModels.Forms"
              xmlns:core="clr-namespace:Syncfusion.XForms.Core;assembly=Syncfusion.Core.XForms"
+             xmlns:gradient="clr-namespace:Syncfusion.XForms.Graphics;assembly=Syncfusion.Core.XForms"
              Title="Crear perfil"
              NavigationPage.HasNavigationBar="False"
              Shell.NavBarIsVisible="False">
@@ -25,6 +26,7 @@
 
     <ContentPage.Content>
         <Grid>
+            <gradient:SfGradientView Style="{StaticResource SfGradientViewStyle}" />
             <ScrollView HorizontalOptions="Center">
                 <ScrollView.VerticalOptions>
                     <OnIdiom
@@ -54,23 +56,11 @@
                             <RowDefinition Height="Auto" />
                             <RowDefinition Height="Auto" />
                             <RowDefinition Height="Auto" />
-                            <RowDefinition Height="Auto" />
                         </Grid.RowDefinitions>
                         <StackLayout
                             HorizontalOptions="Center"
                             Spacing="24"
                             VerticalOptions="CenterAndExpand">
-
-                            <!--  Label to display the title of this page  -->
-                            <Label
-                                FontFamily="{StaticResource Montserrat-SemiBold}"
-                                FontSize="20"
-                                HorizontalOptions="Center"
-                                Style="{StaticResource TitleStyle}"
-                                Text="Crear Perfil" />
-
-                            <!--  Entry to get email ID from user  -->
-                            <local:ProfileEntry Grid.Row="1" Padding="0,24"/>
 
                             <!--  Label to display the title of Animal profile section page  -->
                             <Label
@@ -81,11 +71,11 @@
                                 Text="Crear Perfil Mascota" />
 
                             <!--  Entry to get password from user  -->
-                            <local:AnimalProfileEntry Grid.Row="5" Padding="0,5"/>
+                            <local:AnimalProfileEntry Grid.Row="6" Padding="0,5"/>
 
                             <!--  Sign-up button  -->
                             <buttons:SfButton
-                                Command="{Binding SignUpCommand}"
+                                Command="{Binding ContinueCommand}"
                                 CornerRadius="20"
                                 FontFamily="{StaticResource Montserrat-SemiBold}"
                                 Style="{StaticResource SfButtonStyle}"
@@ -94,6 +84,7 @@
                     </Grid>
                 </StackLayout>
             </ScrollView>
+            
         </Grid>
     </ContentPage.Content>
 </ContentPage>

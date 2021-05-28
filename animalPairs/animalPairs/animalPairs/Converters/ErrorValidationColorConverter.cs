@@ -48,7 +48,7 @@ namespace animalPairs.Converters
                     return Color.FromRgba(255, 255, 255, 0.6);
                 }
 
-                return bindingContext.IsInvalidEmail ? Color.FromHex("#FF4A4A") : Color.Transparent;
+                return bindingContext.IsInvalidEmail ? Color.FromHex("#C30A0A") : Color.Transparent;
 
             }
 

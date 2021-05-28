@@ -18,10 +18,13 @@ C:\Users\Juanjo\Desktop\Carpetas\universidad\TFG\aplicacion\animalPairs\animalPa
 C:\Users\Juanjo\Desktop\Carpetas\universidad\TFG\aplicacion\animalPairs\animalPairs\animalPairs\obj\Debug\netstandard2.0\Views\Chat\Templates\OutgoingTextTemplate.xaml.g.cs
 C:\Users\Juanjo\Desktop\Carpetas\universidad\TFG\aplicacion\animalPairs\animalPairs\animalPairs\obj\Debug\netstandard2.0\Views\ErrorandEmpty\SomethingWentWrongPage.xaml.g.cs
 C:\Users\Juanjo\Desktop\Carpetas\universidad\TFG\aplicacion\animalPairs\animalPairs\animalPairs\obj\Debug\netstandard2.0\Views\ErrorandEmpty\Styles.xaml.g.cs
+C:\Users\Juanjo\Desktop\Carpetas\universidad\TFG\aplicacion\animalPairs\animalPairs\animalPairs\obj\Debug\netstandard2.0\Views\Forms\AnimalProfileEntry.xaml.g.cs
+C:\Users\Juanjo\Desktop\Carpetas\universidad\TFG\aplicacion\animalPairs\animalPairs\animalPairs\obj\Debug\netstandard2.0\Views\Forms\CreateProfilePage.xaml.g.cs
 C:\Users\Juanjo\Desktop\Carpetas\universidad\TFG\aplicacion\animalPairs\animalPairs\animalPairs\obj\Debug\netstandard2.0\Views\Forms\EmailEntry.xaml.g.cs
 C:\Users\Juanjo\Desktop\Carpetas\universidad\TFG\aplicacion\animalPairs\animalPairs\animalPairs\obj\Debug\netstandard2.0\Views\Forms\ForgotPasswordPage.xaml.g.cs
 C:\Users\Juanjo\Desktop\Carpetas\universidad\TFG\aplicacion\animalPairs\animalPairs\animalPairs\obj\Debug\netstandard2.0\Views\Forms\LoginPage.xaml.g.cs
 C:\Users\Juanjo\Desktop\Carpetas\universidad\TFG\aplicacion\animalPairs\animalPairs\animalPairs\obj\Debug\netstandard2.0\Views\Forms\PasswordEntry.xaml.g.cs
+C:\Users\Juanjo\Desktop\Carpetas\universidad\TFG\aplicacion\animalPairs\animalPairs\animalPairs\obj\Debug\netstandard2.0\Views\Forms\ProfileEntry.xaml.g.cs
 C:\Users\Juanjo\Desktop\Carpetas\universidad\TFG\aplicacion\animalPairs\animalPairs\animalPairs\obj\Debug\netstandard2.0\Views\Forms\ResetPasswordPage.xaml.g.cs
 C:\Users\Juanjo\Desktop\Carpetas\universidad\TFG\aplicacion\animalPairs\animalPairs\animalPairs\obj\Debug\netstandard2.0\Views\Forms\SignUpPage.xaml.g.cs
 C:\Users\Juanjo\Desktop\Carpetas\universidad\TFG\aplicacion\animalPairs\animalPairs\animalPairs\obj\Debug\netstandard2.0\Views\Forms\Styles.xaml.g.cs
@@ -47,6 +50,3 @@ C:\Users\Juanjo\Desktop\Carpetas\universidad\TFG\aplicacion\animalPairs\animalPa
 C:\Users\Juanjo\Desktop\Carpetas\universidad\TFG\aplicacion\animalPairs\animalPairs\animalPairs\obj\Debug\netstandard2.0\ref\animalPairs.dll
 C:\Users\Juanjo\Desktop\Carpetas\universidad\TFG\aplicacion\animalPairs\animalPairs\animalPairs\obj\Debug\netstandard2.0\animalPairs.pdb
 C:\Users\Juanjo\Desktop\Carpetas\universidad\TFG\aplicacion\animalPairs\animalPairs\animalPairs\obj\Debug\netstandard2.0\animalPairs.csprojAssemblyReference.cache
-C:\Users\Juanjo\Desktop\Carpetas\universidad\TFG\aplicacion\animalPairs\animalPairs\animalPairs\obj\Debug\netstandard2.0\Views\Forms\CreateProfilePage.xaml.g.cs
-C:\Users\Juanjo\Desktop\Carpetas\universidad\TFG\aplicacion\animalPairs\animalPairs\animalPairs\obj\Debug\netstandard2.0\Views\Forms\AnimalProfileEntry.xaml.g.cs
-C:\Users\Juanjo\Desktop\Carpetas\universidad\TFG\aplicacion\animalPairs\animalPairs\animalPairs\obj\Debug\netstandard2.0\Views\Forms\ProfileEntry.xaml.g.cs

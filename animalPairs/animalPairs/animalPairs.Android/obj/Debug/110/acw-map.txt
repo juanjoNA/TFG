@@ -52,6 +52,9 @@ skiasharp.views.forms.SKCanvasViewRendererBase_2;crc64bb223c2be3a01e03.SKCanvasV
 SkiaSharp.Views.Forms.SKGLViewRendererBase`2, SkiaSharp.Views.Forms;crc64bb223c2be3a01e03.SKGLViewRendererBase_2
 SkiaSharp.Views.Forms.SKGLViewRendererBase`2;crc64bb223c2be3a01e03.SKGLViewRendererBase_2
 skiasharp.views.forms.SKGLViewRendererBase_2;crc64bb223c2be3a01e03.SKGLViewRendererBase_2
+Square.OkHttp.Call+ActionCallback, Square.OkHttp;com.squareup.okhttp.Call_ActionCallback
+Square.OkHttp.Call.ActionCallback;com.squareup.okhttp.Call_ActionCallback
+com.squareup.okhttp.Call_ActionCallback;com.squareup.okhttp.Call_ActionCallback
 Syncfusion.XForms.Buttons.SfCheckBoxRenderer, Syncfusion.Buttons.XForms.Android;crc6494963511c3079d02.SfCheckBoxRenderer
 Syncfusion.XForms.Buttons.SfCheckBoxRenderer;crc6494963511c3079d02.SfCheckBoxRenderer
 syncfusion.xforms.buttons.SfCheckBoxRenderer;crc6494963511c3079d02.SfCheckBoxRenderer
@@ -511,6 +514,15 @@ mono.com.google.firebase.FirebaseApp_BackgroundStateChangeListenerImplementor;mo
 Firebase.IFirebaseAppLifecycleListenerImplementor, Xamarin.Firebase.Common;mono.com.google.firebase.FirebaseAppLifecycleListenerImplementor
 Firebase.IFirebaseAppLifecycleListenerImplementor;mono.com.google.firebase.FirebaseAppLifecycleListenerImplementor
 mono.com.google.firebase.FirebaseAppLifecycleListenerImplementor;mono.com.google.firebase.FirebaseAppLifecycleListenerImplementor
+Firebase.Firestore.IEventListenerImplementor, Xamarin.Firebase.Firestore;mono.com.google.firebase.firestore.EventListenerImplementor
+Firebase.Firestore.IEventListenerImplementor;mono.com.google.firebase.firestore.EventListenerImplementor
+mono.com.google.firebase.firestore.EventListenerImplementor;mono.com.google.firebase.firestore.EventListenerImplementor
+Firebase.Firestore.IOnProgressListenerImplementor, Xamarin.Firebase.Firestore;mono.com.google.firebase.firestore.OnProgressListenerImplementor
+Firebase.Firestore.IOnProgressListenerImplementor;mono.com.google.firebase.firestore.OnProgressListenerImplementor
+mono.com.google.firebase.firestore.OnProgressListenerImplementor;mono.com.google.firebase.firestore.OnProgressListenerImplementor
+Firebase.Firestore.Util.IListenerImplementor, Xamarin.Firebase.Firestore;mono.com.google.firebase.firestore.util.ListenerImplementor
+Firebase.Firestore.Util.IListenerImplementor;mono.com.google.firebase.firestore.util.ListenerImplementor
+mono.com.google.firebase.firestore.util.ListenerImplementor;mono.com.google.firebase.firestore.util.ListenerImplementor
 Firebase.Installations.Internal.IFidListenerImplementor, Xamarin.Firebase.Installations.InterOp;mono.com.google.firebase.installations.internal.FidListenerImplementor
 Firebase.Installations.Internal.IFidListenerImplementor;mono.com.google.firebase.installations.internal.FidListenerImplementor
 mono.com.google.firebase.installations.internal.FidListenerImplementor;mono.com.google.firebase.installations.internal.FidListenerImplementor
@@ -1246,6 +1258,9 @@ android.gms.common.apis.AwaitableResultCallback_1;crc6450e07d0e82e86181.Awaitabl
 Android.Gms.Common.Apis.Internal.BackgroundDetector+IBackgroundStateChangeListenerImplementor, Xamarin.GooglePlayServices.Basement;mono.com.google.android.gms.common.api.internal.BackgroundDetector_BackgroundStateChangeListenerImplementor
 Android.Gms.Common.Apis.Internal.BackgroundDetector.IBackgroundStateChangeListenerImplementor;mono.com.google.android.gms.common.api.internal.BackgroundDetector_BackgroundStateChangeListenerImplementor
 mono.com.google.android.gms.common.api.internal.BackgroundDetector_BackgroundStateChangeListenerImplementor;mono.com.google.android.gms.common.api.internal.BackgroundDetector_BackgroundStateChangeListenerImplementor
+Android.Gms.Plus.PlusOneButton+IOnPlusOneClickListenerImplementor, Xamarin.GooglePlayServices.Plus;mono.com.google.android.gms.plus.PlusOneButton_OnPlusOneClickListenerImplementor
+Android.Gms.Plus.PlusOneButton.IOnPlusOneClickListenerImplementor;mono.com.google.android.gms.plus.PlusOneButton_OnPlusOneClickListenerImplementor
+mono.com.google.android.gms.plus.PlusOneButton_OnPlusOneClickListenerImplementor;mono.com.google.android.gms.plus.PlusOneButton_OnPlusOneClickListenerImplementor
 Android.Gms.Tasks.IOnCanceledListenerImplementor, Xamarin.GooglePlayServices.Tasks;mono.com.google.android.gms.tasks.OnCanceledListenerImplementor
 Android.Gms.Tasks.IOnCanceledListenerImplementor;mono.com.google.android.gms.tasks.OnCanceledListenerImplementor
 mono.com.google.android.gms.tasks.OnCanceledListenerImplementor;mono.com.google.android.gms.tasks.OnCanceledListenerImplementor
@@ -1264,3 +1279,12 @@ mono.com.google.android.gms.tasks.OnTokenCanceledListenerImplementor;mono.com.go
 Android.Gms.Extensions.AwaitableTaskCompleteListener`1, Xamarin.GooglePlayServices.Tasks;crc6495d4f5d63cc5c882.AwaitableTaskCompleteListener_1
 Android.Gms.Extensions.AwaitableTaskCompleteListener`1;crc6495d4f5d63cc5c882.AwaitableTaskCompleteListener_1
 android.gms.extensions.AwaitableTaskCompleteListener_1;crc6495d4f5d63cc5c882.AwaitableTaskCompleteListener_1
+Xamarin.Grpc.LoadBalancer+ISubchannelStateListenerImplementor, Xamarin.Grpc.Api;mono.io.grpc.LoadBalancer_SubchannelStateListenerImplementor
+Xamarin.Grpc.LoadBalancer.ISubchannelStateListenerImplementor;mono.io.grpc.LoadBalancer_SubchannelStateListenerImplementor
+mono.io.grpc.LoadBalancer_SubchannelStateListenerImplementor;mono.io.grpc.LoadBalancer_SubchannelStateListenerImplementor
+Xamarin.Grpc.NameResolver+IListenerImplementor, Xamarin.Grpc.Api;mono.io.grpc.NameResolver_ListenerImplementor
+Xamarin.Grpc.NameResolver.IListenerImplementor;mono.io.grpc.NameResolver_ListenerImplementor
+mono.io.grpc.NameResolver_ListenerImplementor;mono.io.grpc.NameResolver_ListenerImplementor
+Xamarin.Grpc.Context+ICancellationListenerImplementor, Xamarin.Grpc.Context;mono.io.grpc.Context_CancellationListenerImplementor
+Xamarin.Grpc.Context.ICancellationListenerImplementor;mono.io.grpc.Context_CancellationListenerImplementor
+mono.io.grpc.Context_CancellationListenerImplementor;mono.io.grpc.Context_CancellationListenerImplementor
