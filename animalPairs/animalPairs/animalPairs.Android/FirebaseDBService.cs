@@ -49,8 +49,8 @@ namespace animalPairs.Droid
             animalInfo.Put("name", animal.Name);
             animalInfo.Put("type", animal.Type);
 
-            animal.AnimalRace = animal.AnimalRace.ToLower();
-            animalInfo.Put("raza", animal.AnimalRace);
+            animal.Raza = animal.Raza.ToLower();
+            animalInfo.Put("raza", animal.Raza);
 
             animalInfo.Put("age", animal.Age);
             animalInfo.Put("description", animal.Description);

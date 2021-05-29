@@ -1,5 +1,6 @@
 ﻿using animalPairs.Common;
 using animalPairs.Models;
+using animalPairs.Views.Navigation;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -27,39 +28,84 @@ namespace animalPairs.ViewModels.Forms
         /// <summary>
         /// Gets or sets the property that bounds with an entry that gets the name from user in the Sign Up page.
         /// </summary>
-        public UserProfile Profile
+        public string Gender
         {
             get
             {
-                return this.profile;
+                return this.gender;
             }
-
             set
             {
-                if (this.profile == value)
-                {
-                    return;
-                }
-
-                this.profile = value;
+                this.gender = value;
                 this.NotifyPropertyChanged();
             }
         }
-        public Mascota Animal
+
+        public string Raza
         {
             get
             {
-                return this.animal;
+                return this.raza;
             }
-
             set
             {
-                if (this.animal == value)
-                {
-                    return;
-                }
+                this.raza = value;
+                this.NotifyPropertyChanged();
+            }
+        }
 
-                this.animal = value;
+        /// Gets or sets the animal name.
+        public string Name
+        {
+            get
+            {
+                return this.name;
+            }
+            set
+            {
+                this.name = value;
+                this.NotifyPropertyChanged();
+            }
+        }
+
+        /// Gets or sets the animal author name.
+        public string Type
+        {
+            get
+            {
+                return this.type;
+            }
+            set
+            {
+                this.type = value;
+                this.NotifyPropertyChanged();
+            }
+        }
+
+        /// Gets or sets the animal description
+        public string Description
+        {
+            get
+            {
+                return this.description;
+            }
+            set
+            {
+                this.description = value;
+                this.NotifyPropertyChanged();
+            }
+        }
+
+        /// Gets or sets the animal age.
+        public int Age
+        {
+            get
+            {
+                return this.age;
+            }
+            set
+            {
+                this.age = value;
                 this.NotifyPropertyChanged();
             }
         }
@@ -73,7 +119,6 @@ namespace animalPairs.ViewModels.Forms
         public CreateProfileViewModel()
         {
             this.ContinueCommand = new Command(this.ContinueClicked);
-            animal = new Mascota();
         }
         #endregion
 
@@ -90,7 +135,9 @@ namespace animalPairs.ViewModels.Forms
         private async void ContinueClicked(object obj)
         {
             var firebaseDB = DependencyService.Resolve<IFirebaseDBService>();
+            var authentication = DependencyService.Resolve<IAuthenticationService>(); 
             var errores = isValidToContinue();
+            Mascota animal;
             if (errores.Count > 0) 
             {
                 string error = "Por favor introduzca los campos siguientes para continuar:\n\n";
@@ -101,22 +148,20 @@ namespace animalPairs.ViewModels.Forms
                 await App.Current.MainPage.DisplayAlert("Error", error, "OK");
                 return;
             }
-            firebaseDB.SetProfile(Profile);
-            Animal.ProfileId = Profile.Email;
-            firebaseDB.SetAnimal(Animal);
+            animal = new Mascota(Name, Raza, Gender, Age, Type, Description, authentication.GetUserId());
+            firebaseDB.SetAnimal(animal);
+            Application.Current.MainPage = new NavigationPage(new BottomNavigationPage());
         }
 
         private List<string> isValidToContinue()
         {
             List<string> errores = new List<string>();
-            if (Profile.Name == null) errores.Add("Nombre del usuario");
-            if (Profile.Surname == null) errores.Add("Apellido del usuario");
-            if (Animal.Name == null) errores.Add("Nombre del Animal");
-            if (Animal.Age == 0) errores.Add("Edad de la mascota");
-            if (Animal.Type == null) errores.Add("Tipo de mascota");
-            if (Animal.Description == null) errores.Add("Descripción de la mascota");
-            if (Animal.AnimalRace == null) errores.Add("Raza de la mascota");
-            if (Animal.Gender == null) errores.Add("Género de la mascota");
+            if (Name == null) errores.Add("Nombre del Animal");
+            if (Age == 0) errores.Add("Edad de la mascota");
+            if (Type == null) errores.Add("Tipo de mascota");
+            if (Description == null) errores.Add("Descripción de la mascota");
+            if (Raza == null) errores.Add("Raza de la mascota");
+            if (Gender == null) errores.Add("Género de la mascota");
 
             return errores;
         }

@@ -26,7 +26,7 @@
                         x:Name="AnimalName"
                         Placeholder="Nombre de la mascota" Keyboard="Text"
                         Style="{StaticResource EntryStyle}"
-                        Text="{Binding Animal.Name}" />
+                        Text="{Binding Name}" />
 
             </border:SfBorder>
 
@@ -37,7 +37,7 @@
                         x:Name="AnimaleRace"
                         Placeholder="Raza de la mascota" Keyboard="Text"
                         Style="{StaticResource EntryStyle}"
-                        Text="{Binding Animal.AnimalRace}" />
+                        Text="{Binding Raza}" />
 
             </border:SfBorder>
             
@@ -62,7 +62,7 @@
                         x:Name="Age"
                         Keyboard="Numeric"
                         Style="{StaticResource EntryStyle}"
-                        Text="{Binding Animal.Age}"
+                        Text="{Binding Age}"
                         MinimumWidthRequest="50"
                         WidthRequest="50"
                         HorizontalTextAlignment="End"
@@ -88,7 +88,7 @@
                              HorizontalOptions="FillAndExpand"
                              VerticalOptions="CenterAndExpand"
                              RadioButtonGroup.GroupName="animalGenders"
-                             RadioButtonGroup.SelectedValue="{Binding Animal.Gender}">
+                             RadioButtonGroup.SelectedValue="{Binding Gender}">
                     <RadioButton Value="Hembra" Content="Hembra" GroupName="animalGenders" Style="{DynamicResource radioButtonStyle}"/>
                     <RadioButton Value="Macho" Content="Macho" GroupName="animalGenders" Style="{DynamicResource radioButtonStyle}"/>
                 </StackLayout>
@@ -111,7 +111,7 @@
                 VerticalOptions="EndAndExpand" />
 
 
-                <Picker x:Name="AnimalTypePicker" SelectedItem="{Binding Animal.Type}" HorizontalTextAlignment="End" Title="Selecciona un animal" Style="{StaticResource PickerStyle}">
+                <Picker x:Name="AnimalTypePicker" SelectedItem="{Binding Type}" HorizontalTextAlignment="End" Title="Selecciona un animal" Style="{StaticResource PickerStyle}">
                     <Picker.Items>
                         <x:String>perro</x:String>
                         <x:String>gato</x:String>
@@ -127,7 +127,7 @@
                     x:Name="Description" 
                     Keyboard="Text" 
                     Style="{StaticResource EditorStyle}"
-                    Text="{Binding Animal.Description}"
+                    Text="{Binding Description}"
                     MaxLength="100"
                     AutoSize="TextChanges"
                     Placeholder="Descripción"></control:BorderlessEditor>
