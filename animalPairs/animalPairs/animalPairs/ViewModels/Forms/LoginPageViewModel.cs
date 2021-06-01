@@ -1,4 +1,5 @@
-﻿using animalPairs.Views.Catalog;
+﻿using animalPairs.Common;
+using animalPairs.Views.Catalog;
 using animalPairs.Views.Chat;
 using animalPairs.Views.Forms;
 using animalPairs.Views.Navigation;
@@ -28,7 +29,7 @@ namespace animalPairs.ViewModels.Forms
         public LoginPageViewModel()
         {
             this.LoginCommand = new Command(this.LoginClicked);
-            this.SignUpCommand = new Command(this.SignUpClicked);
+            this.SignUpCommand = new Command(this.SignUpClickedAsync);
             this.ForgotPasswordCommand = new Command(this.ForgotPasswordClicked);
             this.SocialMediaLoginCommand = new Command(this.SocialLoggedIn);
         }
@@ -91,17 +92,32 @@ namespace animalPairs.ViewModels.Forms
         /// Invoked when the Log In button is clicked.
         /// </summary>
         /// <param name="obj">The Object</param>
-        private void LoginClicked(object obj)
+        private async void LoginClicked(object obj)
         {
             // Do something
-            Application.Current.MainPage = new NavigationPage(new BottomNavigationPage());
+            var authservice = DependencyService.Resolve<IAuthenticationService>();
+            if(Email is null || Password is null)
+            {
+                await App.Current.MainPage.DisplayAlert("Error", "Introduce un email y una contraseña válidos", "OK");
+            }
+            else 
+            {
+                if (await authservice.LoginWithEmailAndPassword(Email, Password) != string.Empty)
+                {
+                    Application.Current.MainPage = new NavigationPage(new BottomNavigationPage());
+                }
+                else
+                {
+                    await App.Current.MainPage.DisplayAlert("Error", "El email y la contraseña introducidos no son correctos.", "OK");
+                }
+            }
         }
 
         /// <summary>
         /// Invoked when the Sign Up button is clicked.
         /// </summary>
         /// <param name="obj">The Object</param>
-        private void SignUpClicked(object obj)
+        private async void SignUpClickedAsync(object obj)
         {
             Application.Current.MainPage = new NavigationPage(new SignUpPage());
         }

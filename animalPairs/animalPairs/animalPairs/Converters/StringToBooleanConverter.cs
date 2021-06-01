@@ -23,7 +23,7 @@ namespace animalPairs.Converters
         /// <returns>The result</returns>
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
-            if (value == null || !(parameter is BorderlessEntry email))
+           if (value == null || !(parameter is BorderlessEntry email))
             {
                 return false;
             }

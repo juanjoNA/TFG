@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:control="clr-namespace:animalPairs.Controls"
+             xmlns:border="clr-namespace:Syncfusion.XForms.Border;assembly=Syncfusion.Core.XForms"
+             xmlns:picker="clr-namespace:Syncfusion.SfPicker.XForms;assembly=Syncfusion.SfPicker.XForms"
+             xmlns:converter="clr-namespace:animalPairs.Converters"
+             xmlns:animalModel="clr-namespace:animalPairs.Models"
+             x:Class="animalPairs.Views.Forms.AnimalProfileEntry">
+
+    <ContentView.Resources>
+        <ResourceDictionary>
+            <converter:BooleanToColorConverter x:Key="ColorConverter" />
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Styles.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </ContentView.Resources>
+
+    <ContentView.Content>
+        <StackLayout>
+            <!-- Animal Name Entry -->
+            <border:SfBorder Style="{StaticResource SfBorderStyle}">
+
+                <control:BorderlessEntry
+                        x:Name="AnimalName"
+                        Placeholder="Nombre de la mascota" Keyboard="Text"
+                        Style="{StaticResource EntryStyle}"
+                        Text="{Binding Name}" />
+
+            </border:SfBorder>
+
+            <!-- Animal Name Entry -->
+            <border:SfBorder Style="{StaticResource SfBorderStyle}" Margin="0,10,0,0">
+
+                <control:BorderlessEntry
+                        x:Name="AnimaleRace"
+                        Placeholder="Raza de la mascota" Keyboard="Text"
+                        Style="{StaticResource EntryStyle}"
+                        Text="{Binding Raza}" />
+
+            </border:SfBorder>
+            
+            <!-- Label Age + Number stepper-->
+            <StackLayout HorizontalOptions="FillAndExpand"
+                        Orientation="Horizontal"
+                        Spacing="1"
+                        VerticalOptions="CenterAndExpand"
+                        Margin="0,10,0,0">
+                <Label
+                x:Name="AnimalAge"
+                Margin="0,0,40,0"
+                FontSize="16"
+                Text="Edad"
+                TextColor="{DynamicResource Gray-White}"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="StartAndExpand"/>
+
+                <border:SfBorder Style="{StaticResource SfBorderStyle}" HorizontalOptions="End">
+
+                    <control:BorderlessEntry
+                        x:Name="Age"
+                        Keyboard="Numeric"
+                        Style="{StaticResource EntryStyle}"
+                        Text="{Binding Age}"
+                        MinimumWidthRequest="50"
+                        WidthRequest="50"
+                        HorizontalTextAlignment="End"
+                        HorizontalOptions="End"/>
+                </border:SfBorder>
+            </StackLayout>
+
+            <StackLayout HorizontalOptions="FillAndExpand"
+                        Orientation="Horizontal"
+                        Spacing="1"
+                        VerticalOptions="CenterAndExpand"
+                        Margin="0,10,0,0">
+                <Label
+                x:Name="Genero"
+                Margin="0,0,40,0"
+                FontSize="16"
+                Text="Género"
+                TextColor="{DynamicResource Gray-White}"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="StartAndExpand"/>
+
+                <StackLayout Orientation="Horizontal"
+                             HorizontalOptions="FillAndExpand"
+                             VerticalOptions="CenterAndExpand"
+                             RadioButtonGroup.GroupName="animalGenders"
+                             RadioButtonGroup.SelectedValue="{Binding Gender}">
+                    <RadioButton Value="Hembra" Content="Hembra" GroupName="animalGenders" Style="{DynamicResource radioButtonStyle}"/>
+                    <RadioButton Value="Macho" Content="Macho" GroupName="animalGenders" Style="{DynamicResource radioButtonStyle}"/>
+                </StackLayout>
+                
+
+            </StackLayout>
+
+            <!-- Label Type + Animal type comboBox-->
+            <StackLayout HorizontalOptions="FillAndExpand"
+                        Orientation="Horizontal"
+                        Spacing="1"
+                        VerticalOptions="CenterAndExpand"
+                         Margin="0,10,0,0">
+                <Label
+                x:Name="AnimalType"
+                Margin="0,0,40,10"
+                FontSize="16"
+                Text="Tipo mascota"
+                TextColor="{DynamicResource Gray-White}"
+                VerticalOptions="EndAndExpand" />
+
+
+                <Picker x:Name="AnimalTypePicker" SelectedItem="{Binding Type}" HorizontalTextAlignment="End" Title="Selecciona un animal" Style="{StaticResource PickerStyle}">
+                    <Picker.Items>
+                        <x:String>perro</x:String>
+                        <x:String>gato</x:String>
+                        <x:String>caballo</x:String>
+                        <x:String>pajaro</x:String>
+                    </Picker.Items>
+                </Picker>
+            </StackLayout>
+
+            <!-- TextArea description -->
+            <border:SfBorder Style="{StaticResource SfBorderStyle}" Margin="0,10,0,0">
+                <control:BorderlessEditor 
+                    x:Name="Description" 
+                    Keyboard="Text" 
+                    Style="{StaticResource EditorStyle}"
+                    Text="{Binding Description}"
+                    MaxLength="100"
+                    AutoSize="TextChanges"
+                    Placeholder="Descripción"></control:BorderlessEditor>
+            </border:SfBorder>
+            
+            <!-- Grid photos -->
+        </StackLayout>
+    </ContentView.Content>
+</ContentView>

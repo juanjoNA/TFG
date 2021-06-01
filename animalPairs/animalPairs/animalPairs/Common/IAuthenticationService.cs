@@ -8,6 +8,7 @@ namespace animalPairs.Common
 {
     public interface IAuthenticationService
     {
+
         Task<string> LoginWithEmailAndPassword(string email, string password);
         Task<bool> CreateUser(string email, string password);
         bool LogOut();

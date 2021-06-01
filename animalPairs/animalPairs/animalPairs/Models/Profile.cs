@@ -7,29 +7,70 @@ namespace animalPairs.Models
     /// Model for SocialProfile
     /// </summary>
     [Preserve(AllMembers = true)]
-    public class Profile
+    public class UserProfile
     {
         #region Fields
 
+        private string id;
+        private string email;
+        private string name;
+        private string surname;
         private string imagePath;
+        private string animalId;
 
         #endregion
 
         #region Properties
 
-        /// <summary>
-        /// Gets or sets the title.
-        /// </summary>
-        public string Name { get; set; }
+        public string Email
+        {
+            get { return email; }
+            set { this.email = value; }
+        }
+        public string Name
+        {
+            get { return name; }
+            set { this.name = value; }
+        }
+        public string Surname
+        {
+            get { return surname; }
+            set { this.surname = value; }
+        }
+        public string AnimalId
+        {
+            get { return animalId; }
+            set { this.animalId = value; }
+        }
 
-        /// <summary>
-        /// Gets or sets the image path.
-        /// </summary>
         public string ImagePath
         {
             get { return App.BaseImageUrl + this.imagePath; }
             set { this.imagePath = value; }
         }
+        public string Id
+        {
+            get { return id; }
+            set { this.id = value; }
+        }
+
+        #endregion
+
+        #region Constructors
+        public UserProfile(string id, string name, string surname, string email)
+        {
+            Id = id;
+            Name = name;
+            Surname = surname;
+            Email = email;
+        }
+
+        public UserProfile()
+        {
+
+        }
+        #endregion
+        #region Methods
 
         #endregion
     }

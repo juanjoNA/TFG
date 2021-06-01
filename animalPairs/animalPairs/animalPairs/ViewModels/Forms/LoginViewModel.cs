@@ -1,4 +1,5 @@
-﻿using System.Windows.Input;
+﻿using animalPairs.Views.Forms;
+using System.Windows.Input;
 using Xamarin.Forms;
 using Xamarin.Forms.Internals;
 
@@ -86,13 +87,9 @@ namespace animalPairs.ViewModels.Forms
 
         public LoginViewModel()
         {
-            SignUpCommand = new Command(OnSignUp);
+
         }
 
-        private async void OnSignUp()
-        {
-            await Xamarin.Forms.Shell.Current.GoToAsync("//NewUserPage");
-        }
 
 
         #region Commands

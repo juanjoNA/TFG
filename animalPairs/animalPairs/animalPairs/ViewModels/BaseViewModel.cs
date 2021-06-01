@@ -1,4 +1,5 @@
 ﻿using animalPairs.Common;
+using animalPairs.Views.Forms;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -42,7 +43,11 @@ namespace animalPairs.ViewModels
             var authenticationService = DependencyService.Resolve<IAuthenticationService>();
             if (!authenticationService.IsSignIn())
             {
-                await Xamarin.Forms.Shell.Current.GoToAsync("//LoginPage");
+                await Xamarin.Forms.Shell.Current.GoToAsync(nameof(LoginPage));
+            }
+            else
+            {
+                await Xamarin.Forms.Shell.Current.GoToAsync(nameof(SignUpPage));
             }
         }
 

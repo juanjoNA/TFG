@@ -13,13 +13,11 @@ namespace animalPairs.Droid
     {
         public static int REQ_AUTH = 9999;
         public static String KEY_AUTH = "auth";
-
         public async Task<bool> CreateUser(string email, string password)
         {
             try
             {
-                await FirebaseAuth.Instance.CreateUserWithEmailAndPasswordAsync(email, password);
-
+                var task = await FirebaseAuth.Instance.CreateUserWithEmailAndPasswordAsync(email, password);
                 return true;
             }
             catch (Exception ex)

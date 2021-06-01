@@ -21,19 +21,23 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Google.Apis" Version="1.51.0" />
+    <PackageReference Include="Google.Apis.Auth" Version="1.51.0" />
     <PackageReference Include="SkiaSharp.Extended" Version="1.60.0" />
     <PackageReference Include="SkiaSharp.Svg" Version="1.60.0" />
     <PackageReference Include="SkiaSharp.Views.Forms" Version="2.80.2" />
-    <PackageReference Include="Syncfusion.Xamarin.Buttons" Version="19.1.0.55" />
-    <PackageReference Include="Syncfusion.Xamarin.Cards" Version="19.1.0.55" />
-    <PackageReference Include="Syncfusion.Xamarin.Core" Version="19.1.0.55" />
-    <PackageReference Include="Syncfusion.Xamarin.DataSource" Version="19.1.0.55" />
-    <PackageReference Include="Syncfusion.Xamarin.SfBadgeView" Version="19.1.0.55" />
-    <PackageReference Include="Syncfusion.Xamarin.SfComboBox" Version="19.1.0.55" />
-    <PackageReference Include="Syncfusion.Xamarin.SfListView" Version="19.1.0.55" />
-    <PackageReference Include="Syncfusion.Xamarin.SfRating" Version="19.1.0.55" />
-    <PackageReference Include="Syncfusion.Xamarin.SfRotator" Version="19.1.0.55" />
+    <PackageReference Include="Syncfusion.Xamarin.Buttons" Version="19.1.0.64" />
+    <PackageReference Include="Syncfusion.Xamarin.Cards" Version="19.1.0.64" />
+    <PackageReference Include="Syncfusion.Xamarin.Core" Version="19.1.0.64" />
+    <PackageReference Include="Syncfusion.Xamarin.DataSource" Version="19.1.0.64" />
+    <PackageReference Include="Syncfusion.Xamarin.SfBadgeView" Version="19.1.0.64" />
+    <PackageReference Include="Syncfusion.Xamarin.SfComboBox" Version="19.1.0.64" />
+    <PackageReference Include="Syncfusion.Xamarin.SfListView" Version="19.1.0.64" />
+    <PackageReference Include="Syncfusion.Xamarin.SfPicker" Version="19.1.0.64" />
+    <PackageReference Include="Syncfusion.Xamarin.SfRating" Version="19.1.0.64" />
+    <PackageReference Include="Syncfusion.Xamarin.SfRotator" Version="19.1.0.64" />
     <PackageReference Include="Xam.Plugins.Forms.ImageCircle" Version="3.0.0.5" />
+    <PackageReference Include="Xamarin.Build.Download" Version="0.10.0" />
     <PackageReference Include="Xamarin.Firebase.iOS.Core" Version="6.10.4" />
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2012" />
     <PackageReference Include="Xamarin.Essentials" Version="1.6.1" />
@@ -82,6 +86,12 @@
     <EmbeddedResource Update="Views\ErrorandEmpty\Styles.xaml">
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Update="Views\Forms\AnimalProfileEntry.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Forms\CreateProfilePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="Views\Forms\EmailEntry.xaml">
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
@@ -90,6 +100,12 @@
     </EmbeddedResource>
     <EmbeddedResource Update="Views\Forms\LoginPage.xaml">
       <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Forms\PasswordEntry.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Forms\ProfileEntry.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\Forms\ResetPasswordPage.xaml">
       <Generator>MSBuild:Compile</Generator>

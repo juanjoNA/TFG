@@ -1,5 +1,9 @@
 ﻿using animalPairs.Common;
+using animalPairs.Models;
+using animalPairs.Utils;
 using animalPairs.Views.Chat;
+using animalPairs.Views.Forms;
+using animalPairs.Views.Navigation;
 using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Internals;
@@ -15,10 +19,7 @@ namespace animalPairs.ViewModels.Forms
         #region Fields
 
         private string name;
-
-        private string password;
-
-        private string confirmPassword;
+        private string surname;
 
         #endregion
 
@@ -37,9 +38,6 @@ namespace animalPairs.ViewModels.Forms
 
         #region Property
 
-        /// <summary>
-        /// Gets or sets the property that bounds with an entry that gets the name from user in the Sign Up page.
-        /// </summary>
         public string Name
         {
             get
@@ -59,46 +57,21 @@ namespace animalPairs.ViewModels.Forms
             }
         }
 
-        /// <summary>
-        /// Gets or sets the property that bounds with an entry that gets the password from users in the Sign Up page.
-        /// </summary>
-        public string Password
+        public string Surname
         {
             get
             {
-                return this.password;
+                return this.surname;
             }
 
             set
             {
-                if (this.password == value)
+                if (this.surname == value)
                 {
                     return;
                 }
 
-                this.password = value;
-                this.NotifyPropertyChanged();
-            }
-        }
-
-        /// <summary>
-        /// Gets or sets the property that bounds with an entry that gets the password confirmation from users in the Sign Up page.
-        /// </summary>
-        public string ConfirmPassword
-        {
-            get
-            {
-                return this.confirmPassword;
-            }
-
-            set
-            {
-                if (this.confirmPassword == value)
-                {
-                    return;
-                }
-
-                this.confirmPassword = value;
+                this.surname = value;
                 this.NotifyPropertyChanged();
             }
         }
@@ -125,9 +98,9 @@ namespace animalPairs.ViewModels.Forms
         /// Invoked when the Log in button is clicked.
         /// </summary>
         /// <param name="obj">The Object</param>
-        private void LoginClicked(object obj)
+        private async void LoginClicked(object obj)
         {
-            // Do something
+            await Shell.Current.GoToAsync(nameof(LoginPage));
         }
 
         /// <summary>
@@ -136,29 +109,42 @@ namespace animalPairs.ViewModels.Forms
         /// <param name="obj">The Object</param>
         private async void SignUpClickedAsync(object obj)
         {
-            var authService = DependencyService.Resolve<IAuthenticationService>();
-            if(validatePassword(Password, ConfirmPassword))
+            var authservice = DependencyService.Resolve<IAuthenticationService>();
+            var firestoreDB = DependencyService.Resolve<IFirebaseDBService>();
+            UserProfile user;
+
+            if(Name.Equals(null) || Surname.Equals(null) || Email.Equals(null) || Password.Equals(null))
             {
-                if(await authService.CreateUser(Email, Password))
-                {
-                    await Shell.Current.GoToAsync(nameof(ChatMessagePage));
-                }
-                else
-                {
-                    Console.WriteLine("Something was grong");
-                }
+                await App.Current.MainPage.DisplayAlert("Error", "Introduce todos los campos", "OK");
             }
             else
             {
-                Console.WriteLine("Password is not correct");
+                if (!Utils.Utils.isValidPassword(Password))
+                {
+                    await App.Current.MainPage.DisplayAlert("Error", "introduce una contraseña válida", "OK");
+                    return;
+                }
+                if (!Utils.Utils.isValidEmail(Email))
+                {
+                    await App.Current.MainPage.DisplayAlert("Error", "Introduce un email válido", "OK");
+                    return;
+                }
+
+                var result = await authservice.CreateUser(Email, Password);
+                if (result)
+                {
+                    user = new UserProfile(authservice.GetUserId(), Name, Surname, Email);
+                    firestoreDB.SetProfile(user);
+                    Application.Current.MainPage = new NavigationPage(new CreateProfilePage());
+                }
+                else
+                {
+                    await App.Current.MainPage.DisplayAlert("Error", "Ha ocurrido un problema, intentalo más tarde", "OK");
+                }
+                
             }
-        }
-
-        private bool validatePassword(string password, string confirmPassword)
-        {
-            bool result = true;
-
-            return result;
+            
+            
         }
         #endregion
     }

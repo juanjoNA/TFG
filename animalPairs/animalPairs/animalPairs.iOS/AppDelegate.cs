@@ -16,6 +16,7 @@ using Foundation;
 using UIKit;
 using Xamarin.Forms;
 using animalPairs.Common;
+using Syncfusion.SfPicker.XForms.iOS;
 
 namespace animalPairs.iOS
 {
@@ -44,6 +45,7 @@ namespace animalPairs.iOS
             SfGradientViewRenderer.Init();
             SfBorderRenderer.Init();
             SfButtonRenderer.Init();
+            SfPickerRenderer.Init();
 
             Firebase.Core.App.Configure();
             DependencyService.Register<IAuthenticationService, FirebaseAuthentication>();

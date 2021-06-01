@@ -2,6 +2,45 @@
   "version": 3,
   "targets": {
     ".NETStandard,Version=v2.0": {
+      "Google.Apis/1.51.0": {
+        "type": "package",
+        "dependencies": {
+          "Google.Apis.Core": "1.51.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Google.Apis.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Google.Apis.dll": {}
+        }
+      },
+      "Google.Apis.Auth/1.51.0": {
+        "type": "package",
+        "dependencies": {
+          "Google.Apis": "1.51.0",
+          "Google.Apis.Core": "1.51.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Google.Apis.Auth.PlatformServices.dll": {},
+          "lib/netstandard2.0/Google.Apis.Auth.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Google.Apis.Auth.PlatformServices.dll": {},
+          "lib/netstandard2.0/Google.Apis.Auth.dll": {}
+        }
+      },
+      "Google.Apis.Core/1.51.0": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "12.0.3"
+        },
+        "compile": {
+          "lib/netstandard2.0/Google.Apis.Core.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Google.Apis.Core.dll": {}
+        }
+      },
       "Microsoft.NETCore.Platforms/1.1.0": {
         "type": "package",
         "compile": {
@@ -24,6 +63,15 @@
         },
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
+        }
+      },
+      "Newtonsoft.Json/12.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
       },
       "SkiaSharp/2.80.2": {
@@ -90,7 +138,7 @@
           "ref/netstandard2.0/SkiaSharp.Views.Forms.dll": {}
         }
       },
-      "Syncfusion.Licensing/19.1.0.55": {
+      "Syncfusion.Licensing/19.1.0.64": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Syncfusion.Licensing.dll": {}
@@ -99,10 +147,10 @@
           "lib/netstandard2.0/Syncfusion.Licensing.dll": {}
         }
       },
-      "Syncfusion.Xamarin.Buttons/19.1.0.55": {
+      "Syncfusion.Xamarin.Buttons/19.1.0.64": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Xamarin.Core": "19.1.0.55",
+          "Syncfusion.Xamarin.Core": "19.1.0.64",
           "Xamarin.Forms": "4.5.0.617"
         },
         "compile": {
@@ -112,10 +160,10 @@
           "lib/netstandard2.0/Syncfusion.Buttons.XForms.dll": {}
         }
       },
-      "Syncfusion.Xamarin.Cards/19.1.0.55": {
+      "Syncfusion.Xamarin.Cards/19.1.0.64": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Xamarin.Core": "19.1.0.55",
+          "Syncfusion.Xamarin.Core": "19.1.0.64",
           "Xamarin.Forms": "4.5.0.617"
         },
         "compile": {
@@ -125,10 +173,10 @@
           "lib/netstandard2.0/Syncfusion.Cards.XForms.dll": {}
         }
       },
-      "Syncfusion.Xamarin.Core/19.1.0.55": {
+      "Syncfusion.Xamarin.Core/19.1.0.64": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Licensing": "19.1.0.55",
+          "Syncfusion.Licensing": "19.1.0.64",
           "Xamarin.Forms": "4.5.0.617"
         },
         "compile": {
@@ -138,7 +186,7 @@
           "lib/netstandard2.0/Syncfusion.Core.XForms.dll": {}
         }
       },
-      "Syncfusion.Xamarin.DataSource/19.1.0.55": {
+      "Syncfusion.Xamarin.DataSource/19.1.0.64": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Syncfusion.DataSource.Portable.dll": {}
@@ -147,7 +195,7 @@
           "lib/netstandard2.0/Syncfusion.DataSource.Portable.dll": {}
         }
       },
-      "Syncfusion.Xamarin.GridCommon/19.1.0.55": {
+      "Syncfusion.Xamarin.GridCommon/19.1.0.64": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Syncfusion.GridCommon.Portable.dll": {}
@@ -156,10 +204,10 @@
           "lib/netstandard2.0/Syncfusion.GridCommon.Portable.dll": {}
         }
       },
-      "Syncfusion.Xamarin.SfBadgeView/19.1.0.55": {
+      "Syncfusion.Xamarin.SfBadgeView/19.1.0.64": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Xamarin.Core": "19.1.0.55",
+          "Syncfusion.Xamarin.Core": "19.1.0.64",
           "Xamarin.Forms": "4.5.0.617"
         },
         "compile": {
@@ -169,10 +217,10 @@
           "lib/netstandard2.0/Syncfusion.SfBadgeView.XForms.dll": {}
         }
       },
-      "Syncfusion.Xamarin.SfComboBox/19.1.0.55": {
+      "Syncfusion.Xamarin.SfComboBox/19.1.0.64": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Xamarin.Core": "19.1.0.55",
+          "Syncfusion.Xamarin.Core": "19.1.0.64",
           "Xamarin.Forms": "4.5.0.617"
         },
         "compile": {
@@ -182,12 +230,12 @@
           "lib/netstandard2.0/Syncfusion.SfComboBox.XForms.dll": {}
         }
       },
-      "Syncfusion.Xamarin.SfListView/19.1.0.55": {
+      "Syncfusion.Xamarin.SfListView/19.1.0.64": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Xamarin.Core": "19.1.0.55",
-          "Syncfusion.Xamarin.DataSource": "19.1.0.55",
-          "Syncfusion.Xamarin.GridCommon": "19.1.0.55",
+          "Syncfusion.Xamarin.Core": "19.1.0.64",
+          "Syncfusion.Xamarin.DataSource": "19.1.0.64",
+          "Syncfusion.Xamarin.GridCommon": "19.1.0.64",
           "Xamarin.Forms": "4.5.0.617"
         },
         "compile": {
@@ -197,10 +245,23 @@
           "lib/netstandard2.0/Syncfusion.SfListView.XForms.dll": {}
         }
       },
-      "Syncfusion.Xamarin.SfRating/19.1.0.55": {
+      "Syncfusion.Xamarin.SfPicker/19.1.0.64": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Xamarin.Core": "19.1.0.55",
+          "Syncfusion.Xamarin.Core": "19.1.0.64",
+          "Xamarin.Forms": "4.5.0.617"
+        },
+        "compile": {
+          "lib/netstandard2.0/Syncfusion.SfPicker.XForms.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Syncfusion.SfPicker.XForms.dll": {}
+        }
+      },
+      "Syncfusion.Xamarin.SfRating/19.1.0.64": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Xamarin.Core": "19.1.0.64",
           "Xamarin.Forms": "4.5.0.617"
         },
         "compile": {
@@ -210,10 +271,10 @@
           "lib/netstandard2.0/Syncfusion.SfRating.XForms.dll": {}
         }
       },
-      "Syncfusion.Xamarin.SfRotator/19.1.0.55": {
+      "Syncfusion.Xamarin.SfRotator/19.1.0.64": {
         "type": "package",
         "dependencies": {
-          "Syncfusion.Xamarin.Core": "19.1.0.55",
+          "Syncfusion.Xamarin.Core": "19.1.0.64",
           "Xamarin.Forms": "4.5.0.617"
         },
         "compile": {
@@ -276,6 +337,13 @@
           "lib/netstandard2.0/ImageCircle.Forms.Plugin.dll": {}
         }
       },
+      "Xamarin.Build.Download/0.10.0": {
+        "type": "package",
+        "build": {
+          "buildTransitive/Xamarin.Build.Download.props": {},
+          "buildTransitive/Xamarin.Build.Download.targets": {}
+        }
+      },
       "Xamarin.Essentials/1.6.1": {
         "type": "package",
         "dependencies": {
@@ -314,6 +382,76 @@
     }
   },
   "libraries": {
+    "Google.Apis/1.51.0": {
+      "sha512": "4QL7S1PnDN/VumfzrLOGw8tiFLYRL/oPVQkCuIVltAh/gSPWxLu7UFZeum4S3B/ry7794Wigg53jclLlYX/haQ==",
+      "type": "package",
+      "path": "google.apis/1.51.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "NuGetIcon.png",
+        "google.apis.1.51.0.nupkg.sha512",
+        "google.apis.nuspec",
+        "lib/net45/Google.Apis.PlatformServices.dll",
+        "lib/net45/Google.Apis.dll",
+        "lib/net45/Google.Apis.pdb",
+        "lib/net45/Google.Apis.xml",
+        "lib/netstandard1.3/Google.Apis.dll",
+        "lib/netstandard1.3/Google.Apis.pdb",
+        "lib/netstandard1.3/Google.Apis.xml",
+        "lib/netstandard2.0/Google.Apis.dll",
+        "lib/netstandard2.0/Google.Apis.pdb",
+        "lib/netstandard2.0/Google.Apis.xml"
+      ]
+    },
+    "Google.Apis.Auth/1.51.0": {
+      "sha512": "rwyLkiXev6esCRXq+srUcEb8zWylNg7eyE9zO8GxiQplrn1+Jhn8WlwhyJ/xXM83Mrd7Fi0p/UpnOo+m8NBI2g==",
+      "type": "package",
+      "path": "google.apis.auth/1.51.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "NuGetIcon.png",
+        "google.apis.auth.1.51.0.nupkg.sha512",
+        "google.apis.auth.nuspec",
+        "lib/net45/Google.Apis.Auth.PlatformServices.dll",
+        "lib/net45/Google.Apis.Auth.dll",
+        "lib/net45/Google.Apis.Auth.pdb",
+        "lib/net45/Google.Apis.Auth.xml",
+        "lib/netstandard1.3/Google.Apis.Auth.PlatformServices.dll",
+        "lib/netstandard1.3/Google.Apis.Auth.dll",
+        "lib/netstandard1.3/Google.Apis.Auth.pdb",
+        "lib/netstandard1.3/Google.Apis.Auth.xml",
+        "lib/netstandard2.0/Google.Apis.Auth.PlatformServices.dll",
+        "lib/netstandard2.0/Google.Apis.Auth.dll",
+        "lib/netstandard2.0/Google.Apis.Auth.pdb",
+        "lib/netstandard2.0/Google.Apis.Auth.xml"
+      ]
+    },
+    "Google.Apis.Core/1.51.0": {
+      "sha512": "2HBwN81SB5DBI/TKbJr6y6u2I5sBlLxUHYUkc26Y4FSFachdDlWISZZreO0AVKdJrHsbmKDhHdqkRjkLSGeiNw==",
+      "type": "package",
+      "path": "google.apis.core/1.51.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "NuGetIcon.png",
+        "google.apis.core.1.51.0.nupkg.sha512",
+        "google.apis.core.nuspec",
+        "lib/net45/Google.Apis.Core.dll",
+        "lib/net45/Google.Apis.Core.pdb",
+        "lib/net45/Google.Apis.Core.xml",
+        "lib/netstandard1.3/Google.Apis.Core.dll",
+        "lib/netstandard1.3/Google.Apis.Core.pdb",
+        "lib/netstandard1.3/Google.Apis.Core.xml",
+        "lib/netstandard2.0/Google.Apis.Core.dll",
+        "lib/netstandard2.0/Google.Apis.Core.pdb",
+        "lib/netstandard2.0/Google.Apis.Core.xml"
+      ]
+    },
     "Microsoft.NETCore.Platforms/1.1.0": {
       "sha512": "kz0PEW2lhqygehI/d6XsPCQzD7ff7gUJaVGPVETX611eadGsA3A877GdSlU0LRVMCTH/+P3o2iDTak+S08V2+A==",
       "type": "package",
@@ -456,6 +594,37 @@
         "lib/netstandard1.0/_._",
         "netstandard.library.2.0.3.nupkg.sha512",
         "netstandard.library.nuspec"
+      ]
+    },
+    "Newtonsoft.Json/12.0.3": {
+      "sha512": "6mgjfnRB4jKMlzHSl+VD+oUc1IebOZabkbyWj2RiTgWwYPPuaK1H97G1sHqGwPlS5npiF5Q0OrxN1wni2n5QWg==",
+      "type": "package",
+      "path": "newtonsoft.json/12.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.3/Newtonsoft.Json.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.xml",
+        "lib/netstandard2.0/Newtonsoft.Json.dll",
+        "lib/netstandard2.0/Newtonsoft.Json.xml",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.xml",
+        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.xml",
+        "newtonsoft.json.12.0.3.nupkg.sha512",
+        "newtonsoft.json.nuspec",
+        "packageIcon.png"
       ]
     },
     "SkiaSharp/2.80.2": {
@@ -608,10 +777,10 @@
         "skiasharp.views.forms.nuspec"
       ]
     },
-    "Syncfusion.Licensing/19.1.0.55": {
-      "sha512": "L2hVx42JzxwH/EyJue2nMfv0lAJlEQ4h+MDl15xuRCpQzXbRkzUFMxwy4o45jZ6ezKM06Gd4eaGU/f97MlnOig==",
+    "Syncfusion.Licensing/19.1.0.64": {
+      "sha512": "nuxIr0dz3Uq9LGcu1CXd1eFknZ8/kMvfVYb/M66LPghEzQTB5v3FACEMmeZr75kiDxtcvADRp2m2bNeL8QE3Fg==",
       "type": "package",
-      "path": "syncfusion.licensing/19.1.0.55",
+      "path": "syncfusion.licensing/19.1.0.64",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -633,14 +802,14 @@
         "lib/netstandard2.0/Syncfusion.Licensing.dll",
         "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.Licensing.dll",
         "lib/uap10.0/Syncfusion.Licensing.dll",
-        "syncfusion.licensing.19.1.0.55.nupkg.sha512",
+        "syncfusion.licensing.19.1.0.64.nupkg.sha512",
         "syncfusion.licensing.nuspec"
       ]
     },
-    "Syncfusion.Xamarin.Buttons/19.1.0.55": {
-      "sha512": "gv384hUN56Fy4m1daNswTjBS3va+/FeMChT5Tg3jfM+IKd0ABMUUzm+PLFqWdrlHsimDSaeo9+9NETiZENUh2A==",
+    "Syncfusion.Xamarin.Buttons/19.1.0.64": {
+      "sha512": "mltUxuJWNezVQesXMY9BMiFWRryaXUoo1GTtfe41plo+tcOGVJhQqv4O472tSGeRL35RwT2+IPIo6dlPOg3RCQ==",
       "type": "package",
-      "path": "syncfusion.xamarin.buttons/19.1.0.55",
+      "path": "syncfusion.xamarin.buttons/19.1.0.64",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -667,14 +836,14 @@
         "lib/uap10.0/Syncfusion.Buttons.XForms.UWP/Themes/Generic.xaml",
         "lib/uap10.0/Syncfusion.Buttons.XForms.dll",
         "lib/uap10.0/Syncfusion.Buttons.XForms.xml",
-        "syncfusion.xamarin.buttons.19.1.0.55.nupkg.sha512",
+        "syncfusion.xamarin.buttons.19.1.0.64.nupkg.sha512",
         "syncfusion.xamarin.buttons.nuspec"
       ]
     },
-    "Syncfusion.Xamarin.Cards/19.1.0.55": {
-      "sha512": "3nOzaG4VstH6DrGajX/yQbV2ks7IbQj97KNOF852yYh4PcJ+QPXh+3RRftQsc8v3gGe2WKUXfbcLkVjp5CJf3A==",
+    "Syncfusion.Xamarin.Cards/19.1.0.64": {
+      "sha512": "UcM9GituHhiwE69EzFhoNQbRVTpKQBcAXIKVxo2HcPuhGaZA/EF5aI3KNq4SJY2jy6WV5My4XEzWPL1V/D0h4A==",
       "type": "package",
-      "path": "syncfusion.xamarin.cards/19.1.0.55",
+      "path": "syncfusion.xamarin.cards/19.1.0.64",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -695,14 +864,14 @@
         "lib/uap10.0/Syncfusion.Cards.XForms.UWP.xml",
         "lib/uap10.0/Syncfusion.Cards.XForms.dll",
         "lib/uap10.0/Syncfusion.Cards.XForms.xml",
-        "syncfusion.xamarin.cards.19.1.0.55.nupkg.sha512",
+        "syncfusion.xamarin.cards.19.1.0.64.nupkg.sha512",
         "syncfusion.xamarin.cards.nuspec"
       ]
     },
-    "Syncfusion.Xamarin.Core/19.1.0.55": {
-      "sha512": "YZIJ/KA+CQhVzjPeOM1GldWRuUnXcFbZ0b5EK7wbwOjH5mn/LXH7KZPM9/jZTL5p7Zp8sc/mXMFqUj5nP7U1mA==",
+    "Syncfusion.Xamarin.Core/19.1.0.64": {
+      "sha512": "zvY5G5Gfsr/OVdgvyApy2CCg47cMwvTsETQ12Wxef3yxYGW2T64ZFhM7cc2/XTUyIQJzdrf6zYRb2dbAZCrBpg==",
       "type": "package",
-      "path": "syncfusion.xamarin.core/19.1.0.55",
+      "path": "syncfusion.xamarin.core/19.1.0.64",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -730,14 +899,14 @@
         "lib/uap10.0/Syncfusion.Core.XForms.UWP/TILRenderer/ToggleIcons/ToggleVisibleIcon.xaml",
         "lib/uap10.0/Syncfusion.Core.XForms.dll",
         "lib/uap10.0/Syncfusion.Core.XForms.xml",
-        "syncfusion.xamarin.core.19.1.0.55.nupkg.sha512",
+        "syncfusion.xamarin.core.19.1.0.64.nupkg.sha512",
         "syncfusion.xamarin.core.nuspec"
       ]
     },
-    "Syncfusion.Xamarin.DataSource/19.1.0.55": {
-      "sha512": "OcOUCAgmHyMSnknScCgadANSHzMJrCORWrvg8b5pVjCGFCYeS3qNYVkQLMLudobtT72lmwwF/r5IKLRrTJTTXA==",
+    "Syncfusion.Xamarin.DataSource/19.1.0.64": {
+      "sha512": "nY+YYxkpm6kjRnJ+B5GtZCkdiyc1vU/1z/1T9+tkO0/oXZQFoj1PeGhv8Uz6isYyykbG934hbU55ogOTZHXblQ==",
       "type": "package",
-      "path": "syncfusion.xamarin.datasource/19.1.0.55",
+      "path": "syncfusion.xamarin.datasource/19.1.0.64",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -753,14 +922,14 @@
         "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.DataSource.Portable.dll",
         "lib/uap10.0/Syncfusion.DataSource.Portable.XML",
         "lib/uap10.0/Syncfusion.DataSource.Portable.dll",
-        "syncfusion.xamarin.datasource.19.1.0.55.nupkg.sha512",
+        "syncfusion.xamarin.datasource.19.1.0.64.nupkg.sha512",
         "syncfusion.xamarin.datasource.nuspec"
       ]
     },
-    "Syncfusion.Xamarin.GridCommon/19.1.0.55": {
-      "sha512": "uoGy8ihG+pGWV6zopjrOYVQ5Xj8FovmMthtGHMQ0GTfu3hSP4LxZ6QLu5zEqXGnExyUX+e1Q1htwYmUh2OkI4w==",
+    "Syncfusion.Xamarin.GridCommon/19.1.0.64": {
+      "sha512": "TWVHz02PS0ozNJKQNepJsxrd5NMpkRXU0wNfttGf9DyqwlPHnD++TKq8XmYF0cIDrxzMBIgB/WQw0/dw27WR3g==",
       "type": "package",
-      "path": "syncfusion.xamarin.gridcommon/19.1.0.55",
+      "path": "syncfusion.xamarin.gridcommon/19.1.0.64",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -778,14 +947,14 @@
         "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.GridCommon.Portable.dll",
         "lib/uap10.0/Syncfusion.GridCommon.Portable.XML",
         "lib/uap10.0/Syncfusion.GridCommon.Portable.dll",
-        "syncfusion.xamarin.gridcommon.19.1.0.55.nupkg.sha512",
+        "syncfusion.xamarin.gridcommon.19.1.0.64.nupkg.sha512",
         "syncfusion.xamarin.gridcommon.nuspec"
       ]
     },
-    "Syncfusion.Xamarin.SfBadgeView/19.1.0.55": {
-      "sha512": "BmghOfbJIbfihvKt0sk9ii5kBcHyeV+yr9pZlZu8GcUZt75f39zU/2m1VfIamYCSObACgtvV7n1KKUF1eIcvug==",
+    "Syncfusion.Xamarin.SfBadgeView/19.1.0.64": {
+      "sha512": "ufzUZkE7FgReixmySfPRLmOiphsRCELkUH9idifQeCfdhP2t37K2aZarILCN0FSNjVpfwKxwmBfJlBntYhFy7A==",
       "type": "package",
-      "path": "syncfusion.xamarin.sfbadgeview/19.1.0.55",
+      "path": "syncfusion.xamarin.sfbadgeview/19.1.0.64",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -809,14 +978,14 @@
         "lib/uap10.0/Syncfusion.SfBadgeView.XForms.UWP/Properties/Syncfusion.SfBadgeView.XForms.UWP.rd.xml",
         "lib/uap10.0/Syncfusion.SfBadgeView.XForms.dll",
         "lib/uap10.0/Syncfusion.SfBadgeView.XForms.xml",
-        "syncfusion.xamarin.sfbadgeview.19.1.0.55.nupkg.sha512",
+        "syncfusion.xamarin.sfbadgeview.19.1.0.64.nupkg.sha512",
         "syncfusion.xamarin.sfbadgeview.nuspec"
       ]
     },
-    "Syncfusion.Xamarin.SfComboBox/19.1.0.55": {
-      "sha512": "q5hDM1MjDYbQtgPVKW3Qn7S/80yVUNkQz2xg/D8S0N/RSEN88VbiGEhZ30kwYeXCnE3arWbF2XBMLaK+s9MOpg==",
+    "Syncfusion.Xamarin.SfComboBox/19.1.0.64": {
+      "sha512": "liaPO0FM66cKfNj2WKHNTVFCBdTrjK5f4ZlKHZUndOu/4eQg91puXGOdYEy1N7uoM7bYMnV0WfVcwINN58KgFA==",
       "type": "package",
-      "path": "syncfusion.xamarin.sfcombobox/19.1.0.55",
+      "path": "syncfusion.xamarin.sfcombobox/19.1.0.64",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -843,14 +1012,14 @@
         "lib/uap10.0/Syncfusion.SfComboBox.XForms.UWP/dropdownbuttonimage.png",
         "lib/uap10.0/Syncfusion.SfComboBox.XForms.XML",
         "lib/uap10.0/Syncfusion.SfComboBox.XForms.dll",
-        "syncfusion.xamarin.sfcombobox.19.1.0.55.nupkg.sha512",
+        "syncfusion.xamarin.sfcombobox.19.1.0.64.nupkg.sha512",
         "syncfusion.xamarin.sfcombobox.nuspec"
       ]
     },
-    "Syncfusion.Xamarin.SfListView/19.1.0.55": {
-      "sha512": "KfyeWrvJdC+FUvr0ocbmBO4FGs+OIwQCzOXNJgnPIg4bbfDJTsMAnJBB5iuSKwEmqv8I5uFvbG9Q0UGPPFOp/g==",
+    "Syncfusion.Xamarin.SfListView/19.1.0.64": {
+      "sha512": "m5KJ4RITNnHH566durf6kKcL4Hh/MgzyiBvGiYVSEzRucY3ONf/G7LdEshM2YW6SQtjBA/dAcHrFzTaO+ecEOw==",
       "type": "package",
-      "path": "syncfusion.xamarin.sflistview/19.1.0.55",
+      "path": "syncfusion.xamarin.sflistview/19.1.0.64",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -873,14 +1042,48 @@
         "lib/uap10.0/Syncfusion.SfListView.XForms.UWP.dll",
         "lib/uap10.0/Syncfusion.SfListView.XForms.dll",
         "lib/uap10.0/Syncfusion.SfListView.XForms.xml",
-        "syncfusion.xamarin.sflistview.19.1.0.55.nupkg.sha512",
+        "syncfusion.xamarin.sflistview.19.1.0.64.nupkg.sha512",
         "syncfusion.xamarin.sflistview.nuspec"
       ]
     },
-    "Syncfusion.Xamarin.SfRating/19.1.0.55": {
-      "sha512": "aeFl2ThWQM6whdsUUoDW5TjhenwYY4dWqvURsnQKbmYrlj5apApRMGHnomqpH8st7qWkDkqFdxthcHYl4XsjAw==",
+    "Syncfusion.Xamarin.SfPicker/19.1.0.64": {
+      "sha512": "KyPK799rQuNJTQo1LYLULKJThNfixgFhioYq8vkprfkRKngb5r5GrYtqMFzUBgnAwp3mUzA+zAxbLaWrvn28CA==",
       "type": "package",
-      "path": "syncfusion.xamarin.sfrating/19.1.0.55",
+      "path": "syncfusion.xamarin.sfpicker/19.1.0.64",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/MonoAndroid10.0/Syncfusion.SfPicker.Android.dll",
+        "lib/MonoAndroid10.0/Syncfusion.SfPicker.Android.xml",
+        "lib/MonoAndroid10.0/Syncfusion.SfPicker.XForms.Android.dll",
+        "lib/MonoAndroid10.0/Syncfusion.SfPicker.XForms.XML",
+        "lib/MonoAndroid10.0/Syncfusion.SfPicker.XForms.dll",
+        "lib/MonoAndroid90/Syncfusion.SfPicker.Android.dll",
+        "lib/MonoAndroid90/Syncfusion.SfPicker.Android.xml",
+        "lib/MonoAndroid90/Syncfusion.SfPicker.XForms.Android.dll",
+        "lib/MonoAndroid90/Syncfusion.SfPicker.XForms.XML",
+        "lib/MonoAndroid90/Syncfusion.SfPicker.XForms.dll",
+        "lib/Xamarin.iOS10/Syncfusion.SfPicker.XForms.XML",
+        "lib/Xamarin.iOS10/Syncfusion.SfPicker.XForms.dll",
+        "lib/Xamarin.iOS10/Syncfusion.SfPicker.XForms.iOS.dll",
+        "lib/Xamarin.iOS10/Syncfusion.SfPicker.iOS.dll",
+        "lib/Xamarin.iOS10/Syncfusion.SfPicker.iOS.xml",
+        "lib/netstandard2.0/Syncfusion.SfPicker.XForms.XML",
+        "lib/netstandard2.0/Syncfusion.SfPicker.XForms.dll",
+        "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.SfPicker.XForms.XML",
+        "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.SfPicker.XForms.dll",
+        "lib/uap10.0/Syncfusion.SfPicker.XForms.UWP.XML",
+        "lib/uap10.0/Syncfusion.SfPicker.XForms.UWP.dll",
+        "lib/uap10.0/Syncfusion.SfPicker.XForms.XML",
+        "lib/uap10.0/Syncfusion.SfPicker.XForms.dll",
+        "syncfusion.xamarin.sfpicker.19.1.0.64.nupkg.sha512",
+        "syncfusion.xamarin.sfpicker.nuspec"
+      ]
+    },
+    "Syncfusion.Xamarin.SfRating/19.1.0.64": {
+      "sha512": "oKmNXc5mpnC5yI6ABO+ppUP7uktEoAiFKpzCy0u3oRmp6/j4aP1E0gOgYj7AVus21+fMC0whxRRSYCcnlA+NlA==",
+      "type": "package",
+      "path": "syncfusion.xamarin.sfrating/19.1.0.64",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -906,14 +1109,14 @@
         "lib/uap10.0/Syncfusion.SfRating.XForms.UWP.dll",
         "lib/uap10.0/Syncfusion.SfRating.XForms.XML",
         "lib/uap10.0/Syncfusion.SfRating.XForms.dll",
-        "syncfusion.xamarin.sfrating.19.1.0.55.nupkg.sha512",
+        "syncfusion.xamarin.sfrating.19.1.0.64.nupkg.sha512",
         "syncfusion.xamarin.sfrating.nuspec"
       ]
     },
-    "Syncfusion.Xamarin.SfRotator/19.1.0.55": {
-      "sha512": "0BsQh7uUsJhAPT0iiIyEF4esKm9SW4vtrJIvj2jwXqiZ+ApwKAKRTX9YUd944QOAQtmqvbOydOOnUUK2X668vA==",
+    "Syncfusion.Xamarin.SfRotator/19.1.0.64": {
+      "sha512": "1Q/sqTYYmNLRR+eBc1Pdnb0xrWNo7UuluMmyWSkyxIumOJm4T1ebmZifVFexY61BvCWIHSpvc3zkB66PFcVoRg==",
       "type": "package",
-      "path": "syncfusion.xamarin.sfrotator/19.1.0.55",
+      "path": "syncfusion.xamarin.sfrotator/19.1.0.64",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -940,7 +1143,7 @@
         "lib/uap10.0/Syncfusion.SfRotator.XForms.UWP.dll",
         "lib/uap10.0/Syncfusion.SfRotator.XForms.dll",
         "lib/uap10.0/Syncfusion.SfRotator.XForms.xml",
-        "syncfusion.xamarin.sfrotator.19.1.0.55.nupkg.sha512",
+        "syncfusion.xamarin.sfrotator.19.1.0.64.nupkg.sha512",
         "syncfusion.xamarin.sfrotator.nuspec"
       ]
     },
@@ -1082,6 +1285,28 @@
         "lib/xamarinios10/ImageCircle.Forms.Plugin.xml",
         "xam.plugins.forms.imagecircle.3.0.0.5.nupkg.sha512",
         "xam.plugins.forms.imagecircle.nuspec"
+      ]
+    },
+    "Xamarin.Build.Download/0.10.0": {
+      "sha512": "XiQNxx6Jox00O80sJRlZv6jXDZ/r3KC7SMwzQNQcD1gZ+vsZyJH3LcSpdJ5NiZhRrWZlTGNSbooHsOBF7lBOyQ==",
+      "type": "package",
+      "path": "xamarin.build.download/0.10.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "THIRD-PARTY-NOTICE.txt",
+        "build/Microsoft.Win32.Registry.dll",
+        "build/Newtonsoft.Json.dll",
+        "build/Xamarin.Build.Download.dll",
+        "build/Xamarin.Build.Download.props",
+        "build/Xamarin.Build.Download.targets",
+        "buildTransitive/Microsoft.Win32.Registry.dll",
+        "buildTransitive/Newtonsoft.Json.dll",
+        "buildTransitive/Xamarin.Build.Download.dll",
+        "buildTransitive/Xamarin.Build.Download.props",
+        "buildTransitive/Xamarin.Build.Download.targets",
+        "xamarin.build.download.0.10.0.nupkg.sha512",
+        "xamarin.build.download.nuspec"
       ]
     },
     "Xamarin.Essentials/1.6.1": {
@@ -1371,20 +1596,24 @@
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
+      "Google.Apis >= 1.51.0",
+      "Google.Apis.Auth >= 1.51.0",
       "NETStandard.Library >= 2.0.3",
       "SkiaSharp.Extended >= 1.60.0",
       "SkiaSharp.Svg >= 1.60.0",
       "SkiaSharp.Views.Forms >= 2.80.2",
-      "Syncfusion.Xamarin.Buttons >= 19.1.0.55",
-      "Syncfusion.Xamarin.Cards >= 19.1.0.55",
-      "Syncfusion.Xamarin.Core >= 19.1.0.55",
-      "Syncfusion.Xamarin.DataSource >= 19.1.0.55",
-      "Syncfusion.Xamarin.SfBadgeView >= 19.1.0.55",
-      "Syncfusion.Xamarin.SfComboBox >= 19.1.0.55",
-      "Syncfusion.Xamarin.SfListView >= 19.1.0.55",
-      "Syncfusion.Xamarin.SfRating >= 19.1.0.55",
-      "Syncfusion.Xamarin.SfRotator >= 19.1.0.55",
+      "Syncfusion.Xamarin.Buttons >= 19.1.0.64",
+      "Syncfusion.Xamarin.Cards >= 19.1.0.64",
+      "Syncfusion.Xamarin.Core >= 19.1.0.64",
+      "Syncfusion.Xamarin.DataSource >= 19.1.0.64",
+      "Syncfusion.Xamarin.SfBadgeView >= 19.1.0.64",
+      "Syncfusion.Xamarin.SfComboBox >= 19.1.0.64",
+      "Syncfusion.Xamarin.SfListView >= 19.1.0.64",
+      "Syncfusion.Xamarin.SfPicker >= 19.1.0.64",
+      "Syncfusion.Xamarin.SfRating >= 19.1.0.64",
+      "Syncfusion.Xamarin.SfRotator >= 19.1.0.64",
       "Xam.Plugins.Forms.ImageCircle >= 3.0.0.5",
+      "Xamarin.Build.Download >= 0.10.0",
       "Xamarin.Essentials >= 1.6.1",
       "Xamarin.Firebase.iOS.Core >= 6.10.4",
       "Xamarin.Forms >= 5.0.0.2012"
@@ -1434,6 +1663,14 @@
       "netstandard2.0": {
         "targetAlias": "netstandard2.0",
         "dependencies": {
+          "Google.Apis": {
+            "target": "Package",
+            "version": "[1.51.0, )"
+          },
+          "Google.Apis.Auth": {
+            "target": "Package",
+            "version": "[1.51.0, )"
+          },
           "NETStandard.Library": {
             "suppressParent": "All",
             "target": "Package",
@@ -1454,43 +1691,51 @@
           },
           "Syncfusion.Xamarin.Buttons": {
             "target": "Package",
-            "version": "[19.1.0.55, )"
+            "version": "[19.1.0.64, )"
           },
           "Syncfusion.Xamarin.Cards": {
             "target": "Package",
-            "version": "[19.1.0.55, )"
+            "version": "[19.1.0.64, )"
           },
           "Syncfusion.Xamarin.Core": {
             "target": "Package",
-            "version": "[19.1.0.55, )"
+            "version": "[19.1.0.64, )"
           },
           "Syncfusion.Xamarin.DataSource": {
             "target": "Package",
-            "version": "[19.1.0.55, )"
+            "version": "[19.1.0.64, )"
           },
           "Syncfusion.Xamarin.SfBadgeView": {
             "target": "Package",
-            "version": "[19.1.0.55, )"
+            "version": "[19.1.0.64, )"
           },
           "Syncfusion.Xamarin.SfComboBox": {
             "target": "Package",
-            "version": "[19.1.0.55, )"
+            "version": "[19.1.0.64, )"
           },
           "Syncfusion.Xamarin.SfListView": {
             "target": "Package",
-            "version": "[19.1.0.55, )"
+            "version": "[19.1.0.64, )"
+          },
+          "Syncfusion.Xamarin.SfPicker": {
+            "target": "Package",
+            "version": "[19.1.0.64, )"
           },
           "Syncfusion.Xamarin.SfRating": {
             "target": "Package",
-            "version": "[19.1.0.55, )"
+            "version": "[19.1.0.64, )"
           },
           "Syncfusion.Xamarin.SfRotator": {
             "target": "Package",
-            "version": "[19.1.0.55, )"
+            "version": "[19.1.0.64, )"
           },
           "Xam.Plugins.Forms.ImageCircle": {
             "target": "Package",
             "version": "[3.0.0.5, )"
+          },
+          "Xamarin.Build.Download": {
+            "target": "Package",
+            "version": "[0.10.0, )"
           },
           "Xamarin.Essentials": {
             "target": "Package",
@@ -1515,7 +1760,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
       }
     }
   }
